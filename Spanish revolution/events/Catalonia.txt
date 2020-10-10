@@ -1,0 +1,11 @@
+﻿add_namespace = Catalonia
+add_namespace = CataloniaNews
+
+		country_event ={
+		id = CATindependence.1
+		title = CATindependence.1.t
+		desc = CATindependence.1.desc
+		picture = GFX_CAT_event_independencia
+		fire_only_once = yes
+		is_triggered_only = yes
+		}
