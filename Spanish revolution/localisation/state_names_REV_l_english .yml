@@ -1,0 +1,53 @@
+﻿l_english:
+
+####Catalan States######
+ STATE_86:0 "Barcelona"
+ STATE_939:0 "Girona"
+ STATE_940:0 "Lleida"
+ STATE_941:0 "Tarragona" 
+ 
+ ####Andalusian States####
+ STATE_93:0 "Sevilla"
+ STATE_942:0 "Huelva"
+ STATE_943:0 "Cadiz"
+ STATE_944:0 "Cordoba"
+ STATE_945:0 "Jaen"
+ STATE_946:0 "Granada"
+ STATE_947:0 "Almeria"
+ STATE_948:0 "Malaga"
+ 
+ ####Murcia and Valencia States####
+ 
+ STATE_92:0 "Valencia" 
+ STATE_949:0 "Murcia"
+ STATE_950:0 "Alicante"
+ STATE_951:0 "Castellon"
+ 
+ ####Extremadura States####
+ STATE_952:0 "Badajoz"
+ STATE_953:0 "Caceres"
+  
+ ####Aragon States####
+ STATE_87:0 "Zaragoza"
+ STATE_954:0 "Huesca"
+ STATE_955:0 "Teruel"
+ 
+ ####Galicia States####
+ STATE_89:0 "Galicia"   
+      
+ ####Northern Spain####
+ STATE_88:0 "Basque Country"
+ STATE_956:0 "Cantabria"
+ STATE_957:0 "Asturias"
+ STATE_958:0 "Navarra"
+ STATE_959:0 "La Rioja"
+ 
+ 
+ ####Portugal States####
+ 
+ STATE_96:0 "Lisboa"
+ STATE_97:0 "Centro"
+ STATE_960:0 "Norte"
+ STATE_961:0 "Algrave"
+ STATE_962:0 "Alentejo"
+ 

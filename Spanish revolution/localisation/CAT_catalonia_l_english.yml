@@ -1,0 +1,301 @@
+﻿l_english: 
+###Initial Tree###
+CAT_theyear2000:0 "The year 2000"
+CAT_theyear2000_desc:0 "A new age has come and Catalonia must adapt to it or be forgotten"
+
+CAT_lestatcatal:0 "The Catalonian State"
+CAT_lestatcatal_desc:0 "Catalonia is a proud nation and will look after it's interests"
+
+###Industrial###
+
+CAT_industriacatalana:0 "Catalonian Industry"
+CAT_industriacatalana_desc:0 "Catalonia has a good industry for it's size, let's take advantage of this"
+CAT_industria:0 "Industrial Practices"
+CAT_industria_desc:0 "Industrial practices are key to a succesful operation"
+CAT_recursos1:0 "Invest in Strategic Resources"
+CAT_recursos1_desc:0 "We need to produce more resources to satisfy our industry"
+CAT_recursos2:0 "New Resources"
+CAT_recursos2_desc:0 "Even more resources will be pured in the roaring machine"
+CAT_recursos3:0 "Improve Exports"
+CAT_recursos3_desc:0 "We will benefit from trading our resources in the international market"
+CAT_industria1:0 "Develop Rural Zones"
+CAT_industria1_desc:0 "Our rural zones need a hand in order to survive"
+CAT_industria2:0 "Develop Urban Zones"
+CAT_industria2_desc:0 "Our industrial tissue is close to cities, so let's invest there"
+CAT_industria3:0 "Large Industrial Investments"
+CAT_industria3_desc:0 "Finally we can develop our industries"
+
+CAT_recursosa1:0 "New Extraction Methods"
+CAT_recursosa1_desc:0 "By advancing in extraction methods we can improve our resource production"
+CAT_recursosa2:0 "Extraction Breakthrough"
+CAT_recursosa2_desc:0 "Our initial investments have laid the way to progress"
+CAT_recursosa3:0 "New Equipment"
+CAT_recursosa3_desc:0 "With our techniques and experience we can develop new equipment for our primary sector"
+CAT_eficiencia1:0 "Eficiency Focus"
+CAT_eficiencia1_desc:0 "We should focus on our factories and it's efficiency"
+CAT_eficiencia2:0 "New Productive Methods"
+CAT_eficiencia2_desc:0 "New methods will allow us to further improve our quotas"
+CAT_eficiencia3:0 "Complementary Industries"
+CAT_eficiencia3_desc:0 "New specialized industries will appear to supply the gaps left"
+CAT_industriat2:0 "New Industrial Methods"
+CAT_industriat2_desc:0 "After all our investments we are now a top industrial power"
+
+###Internal###
+
+CAT_intern:0 "Internal Development"
+CAT_intern_desc:0 "Focus on improving the internal sphere"
+
+CAT_autonomia1:0 "Seeking the Independence"
+CAT_autonomia1_desc:0 "Catalonia must protect it's interests, so it must become a sovereign nation"
+CAT_autonomia2:0 "Independency Process"
+CAT_autonomia2_desc:0 "Our independency process has started, we must push forward!"
+CAT_autonomia3:0 "Catalonian Independent State"
+CAT_autonomia3_desc:0 "Catalonia is closer every day to becoming free from the spanish yoke"
+CAT_reformes1:0 "Internal Reforms"
+CAT_reformes1_desc:0 "We must reform our institutions in order to create a strong state"
+CAT_reformes2:0 "New Proposals"
+CAT_reformes2_desc:0 "New proposals arrive from our politicians to improve our systems"
+CAT_reformes3:0 "Catalonian Estatut"
+CAT_reformes3_desc:0 "We must sign the Estatut in order to improve our position"
+
+
+CAT_elnouestatcatala:0 "The new Catalonian State"
+CAT_elnouestatcatala_desc:0 "Catalonia is now an independent state, lets guide her to victory"
+
+
+
+CAT_western:0 "Western Outlook"
+CAT_western_desc:0 "The West has a great influence over us"
+CAT_western1:0 "Western Small Influences"
+CAT_western1_desc:0 "The West is starting to change our politics"
+CAT_western2:0 "Western Medium Influences"
+CAT_western2_desc:0 "We can't resist the propaganda and the medias from the West"
+CAT_western3:0 "Western Large Influences"
+CAT_western3_desc:0 "We have become a modern and tolerant Western Nation. For Democracy!"
+
+
+
+CAT_emerging:0 "Emerging Outlook"
+CAT_emerging_desc:0 "Emerging factions are taking control of the country"
+CAT_emerging1:0 "Emerging Small Infuences"
+CAT_emerging1_desc:0 "Small business and corporations are winning force in our country"
+CAT_emerging2:0 "Emerging Medium Influences"
+CAT_emerging2_desc:0 "Our economy is developing to the best standars of the 21st century"
+CAT_emerging3:0 "Emerging Large Influences"
+CAT_emerging3_desc:0 "We are now a booming economy which leaves no one indifferent"
+
+CAT_salafism:0 "Salafist Outlook"
+CAT_salafism_desc:0 "The Arabian influences have finally arrived to us"
+CAT_salafism1:0 "Salafist Small Influences"
+CAT_salafism1_desc:0 "Our men and women will feel safe under the Salafist regime"
+CAT_salafism2:0 "Salafist Medium Influences"
+CAT_salafism2_desc:0 "We will keep the Western influences at bay by any mean necessary"
+CAT_salafism3:0 "Salafist Large Influences"
+CAT_salafism3_desc:0 "Finally we can proclaim our great Salafist state"
+
+CAT_nonaligned:0 "Non-Aligned Outlook"
+CAT_nonaligned_desc:0 "The 21st century is a dangerous one, and we must protect our Nation interests"
+CAT_nonaligned1:0 "Non-Aligned Small Influences"
+CAT_nonaligned1_desc:0 "By creating a neutral stance we can better decide what to do with our future"
+CAT_nonaligned2:0 "Non-Aligned Medium Influences"
+CAT_nonaligned2_desc:0 "Our new stance allows us to defend our nation from outsiders"
+CAT_nonaligned3:0 "Non-Aligned Large Influences"
+CAT_nonaligned3_desc:0 "At last we can proclaim ourselves a neutral nation in this chaotic world"
+
+CAT_nationalistic:0 "Nationalistic Outlook"
+CAT_nationalistic_desc:0 "We must be proud of our nation, as it has endured during diverse and hard times"
+CAT_nationalistic1:0 "Nationalistic Small Influences"
+CAT_nationalistic1_desc:0 "We must protect our heritage and promote it in order to create a National sentiment"
+CAT_nationalistic2:0 "Nationalistic Medium Influences"
+CAT_nationalistic2_desc:0 "The efforts of today will be the rewards of tomorrow"
+CAT_nationalistic3:0 "Nationalistic Large Influences"
+CAT_nationalistic3_desc:0 "Our Nation is proud and strong, we must use it to our advantage"
+
+
+###Comercial + ID###
+
+CAT_comercialiid:0 "Commerce i I+D"
+CAT_comercialiid_desc:0 "We must focus on our comercial relations and our I+D investments"
+
+CAT_comercial1:0 "Comercial Focus"
+CAT_comercial1_desc:0 "We should focus on our resources and our imports in order to create a strong economy"
+CAT_comercial2:0 "Comercial Investments"
+CAT_comercial2_desc:0 "We have to invest in our commercial partners in order to increase our influences there"
+CAT_comercial3:0 "New Export Routes"
+CAT_comercial3_desc:0 "We must further expand our contacts to sell our products"
+
+CAT_id1:0 "I+D Focus"
+CAT_id1_desc:0 "We should focus on our I+D and productivity in order to create a strong economy"
+CAT_id2:0 "Joint Research"
+CAT_id2_desc:0 "Joint research teams with other states and corporations will pave the way forward"
+CAT_id3:0 "New Investigation Methods"
+CAT_id3_desc:0 "New investigation methods will allow us to further increase our development"
+CAT_finalcid1:0 "Relentless Development"
+CAT_finalcid1_desc:0 "Our research had its fruits, now we are at our Industrial Zenit"
+
+CAT_research1:0 "New Advances"
+CAT_research1_desc:0 "New advances in research will allow us to further develop our technologies"
+CAT_research2:0 "National Research HQ"
+CAT_research2_desc:0 "With a National Research Headquarters we can coordinate the nation's researchers"
+CAT_research3:0 "International Resarch HQ"
+CAT_research3_desc:0 "With a International Research Headquarters we can take more chances of improving our technologies"
+
+
+CAT_researcha1:0 "New Research Tecniques"
+CAT_researcha1_desc:0 "We need to incrase our research output, with these new techniques we will acomplish this objective"
+CAT_researcha2:0 "New Protocols"
+CAT_researcha2_desc:0 ""
+CAT_researcha3:0 "Further Specialization"
+CAT_researcha3_desc:0 ""
+
+CAT_research4:0 "New Discoveries"
+CAT_research4_desc:0 ""
+
+
+###Military###
+
+CAT_militar:0 "Militar"
+CAT_militar_desc:0 ""
+
+CAT_naval1:0 "Naval Research"
+CAT_naval1_desc:0 ""
+CAT_naval2:0 "Naval Dockyards"
+CAT_naval2_desc:0 ""
+
+CAT_flotaofensiva:0 "Offensive Fleet"
+CAT_flotaofensiva_desc:0 ""
+CAT_flotaofensiva1:0 "Offensive Fleet Doctrine"
+CAT_flotaofensiva1_desc:0 ""
+CAT_flotaofensiva2:0 "Offensive Ships"
+CAT_flotaofensiva2_desc:0 ""
+
+CAT_flotadefensiva:0 "Defensive Fleet"
+CAT_flotadefensiva_desc:0 ""
+CAT_flotadefensiva1:0 "Defensive Fleet Doctrine"
+CAT_flotadefensiva1_desc:0 ""
+CAT_flotadefensiva2:0 "Defensive Ships"
+CAT_flotadefensiva2_desc:0 ""
+
+CAT_dockyards1:0 "Naval Investments"
+CAT_dockyards1_desc:0 ""
+
+
+CAT_terrestre1:0 "Army Research"
+CAT_terrestre1_desc:0 ""
+CAT_terrestre2:0 "Land Doctrines"
+CAT_terrestre2_desc:0 ""
+
+CAT_exercitofensiu:0 "Offensive Army"
+CAT_exercitofensiu_desc:0 ""
+CAT_exercitofensiu1:0 "Offensive Strategy"
+CAT_exercitofensiu1_desc:0 ""
+CAT_exercitofensiu2:0 "Offensive Tactics"
+CAT_exercitofensiu2_desc:0 ""
+
+CAT_exercitdefensiu:0 "Defensive Army"
+CAT_exercitdefensiu_desc:0 ""
+CAT_exercitdefensiu1:0 "Defensive Strategy"
+CAT_exercitdefensiu1_desc:0 ""
+CAT_exercitdefensiu2:0 "Defensive Tactics"
+CAT_exercitdefensiu2_desc:0 ""
+
+CAT_military1:0 "Army Investments"
+CAT_military1_desc:0 ""
+
+
+CAT_aire1:0 "Airforce Development"
+CAT_aire1_desc:0 ""
+CAT_aire2:0 "Airforce Research"
+CAT_aire2_desc:0 ""
+
+CAT_aereaofensiva:0 "Agressor Airforce"
+CAT_aereaofensiva_desc:0 ""
+CAT_aereaofensiva1:0 "Offensive Doctrine"
+CAT_aereaofensiva1_desc:0 ""
+CAT_aereaofensiva2:0 "Offensive Planning"
+CAT_aereaofensiva2_desc:0 ""
+
+CAT_aereadefensiva:0 "Defensive Airforce"
+CAT_aereadefensiva_desc:0 ""
+CAT_aereadefensiva1:0 "Defensive Systems"
+CAT_aereadefensiva1_desc:0 ""
+CAT_aereadefensiva2:0 "Better Countermeasures"
+CAT_aereadefensiva2_desc:0 ""
+
+CAT_bases1:0 "Air Force Investments"
+CAT_bases1_desc:0 ""
+
+### International ###
+
+
+CAT_diplomatic:0 "Diplomatic Focus"
+CAT_diplomatic_desc:0 ""
+
+CAT_expansiu:0 "Expansive Focus"
+CAT_expansiu_desc:0 ""
+
+CAT_expansiua1:0 "Trainning Camps"
+CAT_expansiua1_desc:0 ""
+CAT_expansiua2:0 "New Recruitment Methods"
+CAT_expansiua2_desc:0 ""
+CAT_expansiua3:0 "Border Expansion"
+CAT_expansiua3_desc:0 ""
+
+CAT_expansiub1:0 "Material Effort"
+CAT_expansiub1_desc:0 ""
+CAT_expansiub2:0 "Catalonian Interventionism"
+CAT_expansiub2_desc:0 ""
+CAT_expansiub3:0 "International Army"
+CAT_expansiub3_desc:0 ""
+
+CAT_expansiuc1:0 "Pancatalanism"
+CAT_expansiuc1_desc:0 ""
+CAT_expansiuc2:0 "Key Alliances"
+CAT_expansiuc2_desc:0 ""
+
+
+CAT_aillat:0 "Isolated Country"
+CAT_aillat_desc:0 ""
+
+
+CAT_autarky:0 "Autarky"
+CAT_autarky_desc:0 ""
+CAT_autarky1:0 "Market Controls"
+CAT_autarky1_desc:0 ""
+CAT_autarky2:0 "National Industrial Investments"
+CAT_autarky2_desc:0 ""
+
+CAT_isolationism:0 "Defend our Borders"
+CAT_isolationism_desc:0 ""
+CAT_isolationism1:0 "Defend our Coast"
+CAT_isolationism1_desc:0 ""
+CAT_isolationism2:0 "Defend our Skies"
+CAT_isolationism2_desc:0 ""
+
+CAT_aillatc1:0 "Immigrant Flux"
+CAT_aillatc1_desc:0 ""
+CAT_aillatc2:0 "Self Development"
+CAT_aillatc2_desc:0 ""
+
+
+CAT_comercial:0 "International Comercial Relations"
+CAT_comercial_desc:0 ""
+
+CAT_comerciala1:0 "Fix Trade Deficit"
+CAT_comerciala1_desc:0 ""
+CAT_comerciala2:0 "Promotion of our Products"
+CAT_comerciala2_desc:0 ""
+CAT_comerciala3:0 "New Marketing Strategies"
+CAT_comerciala3_desc:0 ""
+
+CAT_comercialb1:0 "Productive Focus"
+CAT_comercialb1_desc:0 ""
+CAT_comercialb2:0 "New Mines"
+CAT_comercialb2_desc:0 ""
+CAT_comercialb3:0 "Export Specialization"
+CAT_comercialb3_desc:0 ""
+
+CAT_comercialc1:0 "Raw Resources Industries"
+CAT_comercialc1_desc:0 ""
+CAT_comercialc2:0 "Primary Sector Dominance"
+CAT_comercialc2_desc:0 ""
