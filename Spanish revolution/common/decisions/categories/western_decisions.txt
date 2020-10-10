@@ -1,0 +1,4 @@
+western_decisions = {
+	icon = generic_propaganda
+
+}

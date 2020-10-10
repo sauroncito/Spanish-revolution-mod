@@ -1,0 +1,167 @@
+nuclear_decisions= {
+
+	nuclear1 = {
+		
+		visible = {
+			always = yes
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 500
+		days_remove = 360		
+		
+		complete_effect = {
+		add_ideas = CAT_nuclear1
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	nuclear2 = {
+		
+		visible = {
+			always = yes
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			has_idea = CAT_nuclear1
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 500
+		days_remove = 360		
+		
+		complete_effect = {
+		add_ideas = CAT_nuclear2
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}	
+	
+	nuclear3 = {
+		
+		visible = {
+			always = yes
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			has_idea = CAT_nuclear2
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 500
+		days_remove = 360
+		
+		complete_effect = {
+			set_technology = {
+			nuclear_reactor = 1
+			}
+			add_ideas = CAT_nuclear3
+			add_opinion_modifier = {
+			target = SPR
+			modifier = nuclear_program
+			}
+			add_opinion_modifier = {
+			target = FRA
+			modifier = nuclear_program
+			}
+			}
+		
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}	
+	
+		nuclearp = {
+		
+		visible = {
+			always = yes
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			has_idea = CAT_nuclear2
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 250
+		days_remove = 7
+		
+		complete_effect = {
+		add_timed_idea = {
+			idea = CAT_nuclearp
+			days = 180
+			}
+			add_opinion_modifier = {
+			target = SPR
+			modifier = nuclear_production
+			}
+			add_opinion_modifier = {
+			target = FRA
+			modifier = nuclear_production
+			}	
+			
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+		nuclearc = {
+		
+		visible = {
+			always = yes
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			has_idea = CAT_nuclear2
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 250
+		days_remove = 7
+		
+		complete_effect = {
+			add_timed_idea = {
+			idea = CAT_nuclearc
+			days = 180
+			}
+			add_opinion_modifier = {
+			target = SPR
+			modifier = nuclear_construction
+			}
+			add_opinion_modifier = {
+			target = FRA
+			modifier = nuclear_construction
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}	
+	
+}

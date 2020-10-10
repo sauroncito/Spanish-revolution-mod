@@ -1,0 +1,173 @@
+production_decisions= {
+
+	militaryproduction = {
+		
+		visible = {
+		has_completed_focus = CAT_finalcid1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_finalcid1
+			NOT ={ has_decision = navalproduction }
+			NOT ={ has_decision = construction }
+			NOT ={ has_decision = upgradeequipment }
+			NOT ={ has_decision = industryrepair }
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 150
+		days_remove = 7	
+		days_re_enable = 180
+		
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		add_timed_idea = {
+		idea = CAT_mproduction
+		days = 90
+		}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+	navalproduction = {
+		
+		visible = {
+		has_completed_focus = CAT_finalcid1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_finalcid1
+			NOT ={ has_decision = militaryproduction }
+			NOT ={ has_decision = construction }
+			NOT ={ has_decision = upgradeequipment }
+			NOT ={ has_decision = industryrepair }
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 150
+		days_remove = 7	
+		days_re_enable = 180
+		
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		add_timed_idea = {
+		idea = CAT_nproduction
+		days = 90
+		}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+	construction = {
+		
+		visible = {
+		has_completed_focus = CAT_finalcid1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_finalcid1
+			NOT ={ has_decision = navalproduction }
+			NOT ={ has_decision = militaryproduction }
+			NOT ={ has_decision = upgradeequipment }
+			NOT ={ has_decision = industryrepair }	
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 150
+		days_remove = 7	
+		days_re_enable = 180
+		
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		add_timed_idea = {
+		idea = CAT_construction
+		days = 90
+		}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}	
+	
+	upgradeequipment = {
+		
+		visible = {
+		has_completed_focus = CAT_finalcid1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_finalcid1
+			NOT ={ has_decision = navalproduction }
+			NOT ={ has_decision = construction }
+			NOT ={ has_decision = militaryproduction }
+			NOT ={ has_decision = industryrepair }
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 150
+		days_remove = 7	
+		days_re_enable = 180
+		
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		add_timed_idea = {
+		idea = CAT_upgrade
+		days = 90
+		}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}		
+
+	industryrepair = {
+		
+		visible = {
+		has_completed_focus = CAT_finalcid1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_finalcid1
+			NOT ={ has_decision = navalproduction }
+			NOT ={ has_decision = construction }
+			NOT ={ has_decision = upgradeequipment }
+			NOT ={ has_decision = militaryproduction }			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 100
+		days_remove = 7	
+		days_re_enable = 180
+		
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		add_timed_idea = {
+		idea = CAT_repair
+		days = 90
+		}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}	
+	
+}

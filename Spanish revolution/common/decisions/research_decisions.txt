@@ -1,0 +1,96 @@
+research_decisions= {
+
+	srboost = {
+		
+		visible = {
+		has_completed_focus = CAT_research4
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_research4
+			NOT ={ has_decision = mrboost }
+			NOT ={ has_decision = brboost }
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 100
+		days_remove = 7	
+		days_re_enable = 270
+		
+		complete_effect = {
+		add_timed_idea = {
+		idea = CAT_tech1
+		days = 90
+		}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+	mrboost = {
+		
+		visible = {
+		has_completed_focus = CAT_research4
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_research4
+			NOT ={ has_decision = srboost }
+			NOT ={ has_decision = brboost }
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 200
+		days_remove = 7	
+		days_re_enable = 270
+		
+		complete_effect = {
+		add_timed_idea = {
+		idea = CAT_tech2
+		days = 90
+		}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+	brboost = {
+		
+		visible = {
+		has_completed_focus = CAT_research4
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_research4
+			NOT ={ has_decision = mrboost }
+			NOT ={ has_decision = srboost }
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 300
+		days_remove = 7	
+		days_re_enable = 270
+		
+		complete_effect = {
+		add_timed_idea = {
+		idea = CAT_tech3
+		days = 90
+		}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}		
+	
+}

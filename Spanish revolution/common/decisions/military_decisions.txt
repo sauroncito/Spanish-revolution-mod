@@ -1,0 +1,126 @@
+military_decisions= {
+
+	army1 = {
+		
+		visible = {
+			always = yes
+			has_completed_focus = CAT_militar
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 75
+		days_remove = 7		
+		days_re_enable = 180
+		
+		complete_effect = {
+		army_experience = 15
+		subtract_from_variable = { treasury = 0.1 }
+
+		
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+	navy1 = {
+		
+		visible = {
+			always = yes
+			has_completed_focus = CAT_militar
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 75
+		days_remove = 7		
+		days_re_enable = 180
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		navy_experience = 15		
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	air1 = {
+		
+		visible = {
+			always = yes
+			has_completed_focus = CAT_militar
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 75
+		days_remove = 7	
+		days_re_enable = 180
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		air_experience = 15		
+		
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}	
+
+	resistance1 = {
+		
+		visible = {
+			always = yes
+			has_completed_focus = CAT_militar
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			has_war = yes
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 150
+		days_remove = 7	
+		days_re_enable = 180
+		complete_effect = {
+			subtract_from_variable = { treasury = 0.25 }
+			add_timed_idea = {
+			idea = CAT_resistance1
+			days = 180
+			}	
+		
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+
+}

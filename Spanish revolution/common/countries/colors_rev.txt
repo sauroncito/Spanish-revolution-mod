@@ -1,0 +1,26 @@
+#reload countrycolors
+
+ARN = {
+	color = rgb { 0  253  236 } 
+	color_ui = rgb { 0  253  236 } 
+}
+AND = {
+	color = rgb { 0  230  0  }
+	color_ui = rgb { 0  230  0  }
+}
+EUK = {
+	color = rgb { 253  0  253 }
+	color_ui = rgb { 253  0  253 }
+}
+GAL = {
+	color = rgb { 77  77  255 }
+	color_ui = rgb { 77  77  255 }
+}
+NLR = {
+	color = rgb { 253  0  34 }
+	color_ui = rgb { 253  0  34 }
+}
+ATS = {
+	color = rgb { 253  0  34 }
+	color_ui = rgb { 253  0  34 }
+}

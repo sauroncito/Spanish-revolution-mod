@@ -1,0 +1,4 @@
+emerging_decisions = {
+	icon = generic_propaganda
+
+}

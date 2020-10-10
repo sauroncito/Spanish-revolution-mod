@@ -1,0 +1,17 @@
+################
+##### CAT ######
+################
+
+
+CAT_congress_decisions = {
+	icon = cat_congress
+	visible = {has_government = democratic has_completed_focus = CAT_western3}
+	allowed = {
+		original_tag = CAT
+		
+		}
+
+	scripted_gui = cat_congress_decision_ui	
+
+	priority = 85
+}

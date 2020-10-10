@@ -1,0 +1,325 @@
+paisos_decisions= {
+
+
+
+######### Cataluña #################
+
+	paisos1 = {
+		
+		visible = {
+		has_completed_focus = CAT_elnouestatcatala
+			tag =  CAT 
+			NOT ={
+			92 = {is_core_of = CAT }
+			94= {is_core_of = CAT}
+			}
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_elnouestatcatala
+			has_full_control_of_state = 92
+			has_full_control_of_state = 94
+			NOT = {is_subject_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 300
+		days_remove = 360	
+		fire_only_once = yes	
+		
+		remove_effect = {
+		set_cosmetic_tag = PPC
+		add_state_core = 92
+		add_state_core = 94
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+	}
+
+
+	propagandareferendum ={
+	
+			visible = {
+			has_completed_focus = CAT_elnouestatcatala
+			tag =  CAT 
+			NOT ={
+			92 = {is_owned_by = CAT }
+			94= {is_owned_by = CAT}
+			}
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_elnouestatcatala
+			NOT = {is_subject_of = SPR}
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 200
+		days_remove = 180		
+		
+		remove_effect = {
+		add_to_variable = {
+		var = CAT.suportreferendumCAT
+		value = 25
+		}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	mitingreferendum ={
+	
+			visible = {
+			has_completed_focus = CAT_elnouestatcatala
+			tag =  CAT 
+			NOT ={
+			92 = {is_owned_by = CAT }
+			94= {is_owned_by = CAT}
+			}
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_elnouestatcatala
+			NOT = {is_subject_of = SPR}
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 100
+		days_remove = 120	
+		
+		remove_effect = {
+		add_to_variable = {
+		var = CAT.suportreferendumCAT
+		value = 15
+		}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+		indoctrinationreferendum ={
+	
+			visible = {
+			has_completed_focus = CAT_elnouestatcatala
+			tag =  CAT 
+			NOT ={
+			92 = {is_owned_by = CAT }
+			94= {is_owned_by = CAT}
+			}
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_elnouestatcatala
+			NOT = {is_subject_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 50
+		days_remove = 90		
+		
+		remove_effect = {
+		add_to_variable = {
+		var = CAT.suportreferendumCAT
+		value = 5
+		}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+		
+######### España #################
+
+	nationalcampaignESP ={
+	
+			visible = {
+			CAT = { has_completed_focus = CAT_elnouestatcatala }
+			tag =  SPR 
+			NOT ={
+			92 = {is_owned_by = CAT }
+			94= {is_owned_by = CAT}
+			}
+		}
+		allowed = { tag = SPR }
+		available = {
+			CAT = { has_completed_focus = CAT_elnouestatcatala }
+			NOT = {is_subject_of = SPR}
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 150
+		days_remove = 150		
+		
+		remove_effect = {
+		subtract_from_variable = {
+		var = CAT.suportreferendumCAT
+		value = 15
+		}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+	PublicDebateESP ={
+	
+			visible = {
+			CAT = { has_completed_focus = CAT_elnouestatcatala }
+			tag = SPR
+			NOT ={
+			92 = {is_owned_by = CAT }
+			94= {is_owned_by = CAT}
+			}
+		}
+		allowed = { tag = SPR }
+		available = {
+			CAT = { has_completed_focus = CAT_elnouestatcatala }
+			NOT = {is_subject_of = SPR}
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 100
+		days_remove = 120	
+		
+		remove_effect = {
+		subtract_from_variable = {
+		var = CAT.suportreferendumCAT
+		value = 10
+		}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+		combat_indoctrinationESP ={
+	
+			visible = {
+			CAT = { has_completed_focus = CAT_elnouestatcatala }
+			tag = SPR 
+			NOT ={
+			92 = {is_owned_by = CAT }
+			94= {is_owned_by = CAT}
+			}
+		}
+		allowed = { tag = SPR }
+		available = {
+			CAT = { has_completed_focus = CAT_elnouestatcatala }
+			NOT = {is_subject_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 50
+		days_remove = 90		
+		
+		remove_effect = {
+		subtract_from_variable = {
+		var = CAT.suportreferendumCAT
+		value = 5
+		}
+		}
+		
+		ai_will_do = {
+			factor = 50
+		}
+	}
+
+
+######### Missió Referendum #################
+
+		
+	paisos_referendum_mission = {		
+
+		icon = GFX_decision_icon_default		
+		days_mission_timeout = 360	
+		is_good = yes	
+		
+		available = {		
+			92 = {is_owned_by = CAT }
+			
+			94= {is_owned_by = CAT}
+			
+		}
+		activation = {
+			check_variable = {
+			var = CAT.suportreferendumCAT
+			value = 55
+			compare = greater_than_or_equals
+			}
+		}
+		fire_only_once = no		
+
+		visible = {	
+			CAT = { has_completed_focus = CAT_elnouestatcatala }
+			OR = {
+			tag = CAT
+			tag = SPR
+			}
+			
+		}
+
+
+		timeout_effect = {	
+		IF = { 
+		limit = { 			
+				check_variable = {
+				var = CAT.suportreferendumCAT
+				value = 55
+				compare = greater_than_or_equals
+				} 
+				}
+			CAT={
+			transfer_state = 92
+			transfer_state = 94
+			}
+		}
+		else_if = {
+		limit = {
+				check_variable = {
+				var = CAT.suportreferendumCAT
+				value = 55
+				compare = less_than
+				}
+			}
+			CAT = {
+			add_political_power = -100
+			add_stability = -0.05		
+			}
+			SPR = {
+			add_political_power = 100
+			add_stability = 0.05		
+			}
+		}
+		}
+		complete_effect  = {
+	
+		}
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+
+
+}

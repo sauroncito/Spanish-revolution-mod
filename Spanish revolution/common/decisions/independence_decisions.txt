@@ -1,0 +1,188 @@
+independence_decisions= {
+
+		independence1 = {
+		
+		visible = {
+			has_dlc = "Together for Victory"
+			has_completed_focus = CAT_autonomia3
+			is_subject_of = SPR
+		}
+		allowed = { tag = CAT }
+		available = {
+			NOT ={ has_decision = independence2 }
+			has_stability > 0.35
+			is_subject_of = SPR
+			has_completed_focus = CAT_autonomia3
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 50
+		days_remove = 180
+		
+		complete_effect = {
+			add_timed_idea = {
+			idea = CAT_Autonomia1
+			days = 180
+			}
+			add_opinion_modifier = {
+			target = SPR
+			modifier = increase_autonomy
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+		independence2 = {
+		
+		visible = {
+			has_dlc = "Together for Victory"
+			is_subject_of = SPR
+			has_completed_focus = CAT_autonomia3
+
+		}
+		allowed = { tag = CAT }
+		available = {
+			NOT ={ has_decision = independence1 }
+			has_completed_focus = CAT_autonomia3
+			has_stability > 0.35
+			is_subject_of = SPR
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 200
+		days_remove = 360
+		
+		complete_effect = {
+			add_timed_idea = {
+			idea = CAT_Autonomia2
+			days = 360
+			}
+			add_opinion_modifier = {
+			target = SPR
+			modifier = more_autonomy
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+
+		independencentfv1 = {
+		
+		visible = {
+			NOT = {has_dlc = "Together for Victory"}
+			is_subject_of = SPR
+			
+			has_completed_focus = CAT_autonomia3
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_autonomia3
+			has_stability > 0.25
+			is_subject_of = SPR
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 750
+		days_remove = 360
+		
+		complete_effect = {
+			add_ideas = CAT_independence1
+			add_opinion_modifier = {
+			target = SPR
+			modifier = more_autonomy
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+		independencentfv2 = {
+		
+		visible = {
+			has_idea = CAT_independence1
+			NOT = {has_dlc = "Together for Victory"}
+			is_subject_of = SPR
+			has_completed_focus = CAT_autonomia3
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_autonomia3
+			has_stability > 0.25
+			is_subject_of = SPR
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 750
+		days_remove = 360
+		
+		complete_effect = {
+			swap_ideas = {
+			remove_idea = CAT_independence1
+			add_idea = CAT_independence2
+			}
+			add_opinion_modifier = {
+			target = SPR
+			modifier = more_autonomy
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}	
+		independencentfv3 = {
+		
+		visible = {
+			has_idea = CAT_independence2
+			NOT = {has_dlc = "Together for Victory"}
+			is_subject_of = SPR
+			has_completed_focus = CAT_autonomia3
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_autonomia3
+			has_stability > 0.25
+			is_subject_of = SPR
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 750
+		days_remove = 360
+		
+		complete_effect = {
+			country_event = {
+			id = CATindependence.1
+			days = 10
+			random = 50
+			}
+			SPR = {end_puppet = CAT}
+			remove_ideas = CAT_independence2
+			add_opinion_modifier = {
+			target = SPR
+			modifier = more_autonomy
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+}

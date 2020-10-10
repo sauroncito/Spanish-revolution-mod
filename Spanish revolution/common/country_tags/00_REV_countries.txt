@@ -1,0 +1,8 @@
+#Iberian Countries
+
+AND = "countries/Andalucia.txt"
+ARN = "countries/Aragon.txt"
+EUK = "countries/Basque Country.txt"
+GAL = "countries/Galicia.txt"
+NLR = "countries/Navarra La Rioja.txt"
+ATS = "countries/Asturias - Cantabria.txt"
