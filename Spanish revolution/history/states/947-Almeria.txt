@@ -1,0 +1,47 @@
+
+state = {
+	id = 947
+	name = "STATE_947"
+	resources = {
+		steel = 4.000
+		tungsten = 5.000
+	}
+
+	history = {
+		owner = AND
+		add_core_of = SPR
+		add_core_of = AND
+
+		victory_points = {
+			12038 1 
+		}
+		
+		buildings = {
+			infrastructure = 3
+			internet_station = 2
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 0
+			12038 = {
+				naval_base = 1
+
+			}
+
+		}
+
+		2017.1.1 = {
+			add_manpower = 184577
+			buildings = {
+				internet_station = 4
+				industrial_complex = 2
+			}
+		}
+	}
+
+	provinces = {
+		747 12038 11956
+	}
+	manpower = 522095
+	buildings_max_level_factor = 1.000
+	state_category = state_02
+}

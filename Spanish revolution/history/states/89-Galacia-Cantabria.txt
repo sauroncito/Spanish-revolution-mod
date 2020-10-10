@@ -1,0 +1,57 @@
+
+state = {
+	id = 89
+	name = "STATE_89"
+	resources = {
+		aluminium = 5.000
+	}
+
+	history = {
+		owner = GAL
+		add_core_of = GAL
+		add_core_of = SPR
+		victory_points = {
+			6734 10 
+		}
+		victory_points = {
+			758 20
+		}
+		victory_points = {
+			9686 1 
+		}
+		victory_points = {
+			9689 1 
+		}
+		victory_points = {
+			11692 1 
+		}
+		buildings = {
+			infrastructure = 6
+			internet_station = 2
+			dockyard = 4
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+			758 = {
+				naval_base = 6
+
+			}
+
+
+		}
+		2017.1.1 = {
+			add_manpower = 536694
+			buildings = {
+				internet_station = 4
+				industrial_complex = 4
+			}
+		}
+	}
+
+	provinces = {
+		11840 9686 6734 9689 729  6764 758 11692 11677
+	}
+	manpower = 3853919
+	buildings_max_level_factor = 1.000
+	state_category = state_08
+}

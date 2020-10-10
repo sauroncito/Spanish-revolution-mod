@@ -1,0 +1,34 @@
+
+state = {
+	id = 955
+	name = "STATE_955"
+
+	history = {
+		owner = ARN
+		add_core_of = ARN
+		add_core_of = SPR
+		victory_points = {
+			9812 1
+		}
+		buildings = {
+			infrastructure = 6
+			internet_station = 2
+			industrial_complex = 1
+
+
+		}
+		2017.1.1 = {
+			buildings = {
+				internet_station = 4
+			}
+			add_manpower = 0
+		}
+	}
+
+	provinces = {
+		3954 7213 9812
+	}
+	manpower = 137086
+	buildings_max_level_factor = 1.000
+	state_category = state_02
+}

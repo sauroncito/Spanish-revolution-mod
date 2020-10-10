@@ -1,0 +1,30 @@
+﻿units = {
+
+	### Naval OOB ###
+
+
+	fleet = {
+		name = "Andalusian Surface Fleet"
+		naval_base = 9979
+		task_force = {
+			name = "Andalusian Surface Fleet I"
+			location = 9979
+			ship = { name = "AFS Sevilla (F-86)" definition = frigate experience = 75 equipment = { frigate_1 = { amount = 1 owner = AND creator = USA } } }
+			ship = { name = "AFS Almeria (F-35)" definition = corvette experience = 75 equipment = { corvette_1 = { amount = 1 owner = AND } } }
+			ship = { name = "AFS Cadiz (F-35)" definition = corvette experience = 75 equipment = { corvette_1 = { amount = 1 owner = AND } } }		
+		}
+	}
+
+	fleet = {
+		name = "Andalusian Submarine Fleet"
+		naval_base = 9979
+		task_force = {
+			name = "Andalusian Submarine Fleet I"
+			location = 9979
+			ship = { name = "AFS Jerez de la Frontera (S-61)" definition = diesel_attack_submarine experience = 75 equipment = { diesel_attack_submarine_1 = { amount = 1 owner = AND } } }
+			ship = { name = "AFS Ronda (S-62)" definition = diesel_attack_submarine experience = 75 equipment = { diesel_attack_submarine_1 = { amount = 1 owner = AND } } }
+		}
+	}
+
+}
+

@@ -1,0 +1,42 @@
+
+state = {
+	id = 86
+	name = "STATE_86"
+
+	history = {
+		owner = CAT
+		victory_points = {
+			9764 10 
+		}
+
+		buildings = {
+			infrastructure = 6
+			internet_station = 2
+			industrial_complex = 4
+			fuel_silo = 2
+			synthetic_refinery = 1
+			air_base = 2
+			9764 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = SPR
+		add_core_of = CAT
+		2017.1.1 = {
+			add_manpower = 913771
+			buildings = {
+				internet_station = 4
+				industrial_complex = 5
+			}
+		}
+	}
+
+	provinces = {
+	9764 9797 6865
+	}
+	manpower = 6561648
+	buildings_max_level_factor = 1.000
+	state_category = state_09
+}

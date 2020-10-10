@@ -1,0 +1,42 @@
+
+state = {
+	id = 945
+	name = "STATE_945"
+	resources = {
+
+	}
+
+	history = {
+		owner = AND
+		add_core_of = SPR
+		add_core_of = AND
+
+		victory_points = {
+			10111 1 
+		}
+
+		buildings = {
+			infrastructure = 2
+			internet_station = 2
+			industrial_complex = 0
+			arms_factory = 0
+
+
+		}
+
+		2017.1.1 = {
+			add_manpower = 0
+			buildings = {
+				internet_station = 4
+				industrial_complex = 3
+			}
+		}
+	}
+
+	provinces = {
+		10111 950 3871 6744
+	}
+	manpower = 644275
+	buildings_max_level_factor = 1.000
+	state_category = state_03
+}

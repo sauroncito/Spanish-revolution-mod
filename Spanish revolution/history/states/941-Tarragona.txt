@@ -1,0 +1,40 @@
+state={
+	id=941
+	name="STATE_941"
+	history = {
+		owner = CAT
+
+		victory_points = {
+			6812 1
+		}
+
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			air_base = 1
+			6812 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = SPR
+		add_core_of = CAT
+		2017.1.1 = {
+			add_manpower = 791693
+			buildings = {
+				industrial_complex = 5
+			}
+		}
+	}
+
+	provinces = {
+		6812 6966 6836 
+	}
+	resources = {
+        oil = 2
+    }
+	manpower = 548533
+	buildings_max_level_factor = 1.000
+	state_category = state_03
+}

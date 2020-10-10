@@ -1,0 +1,36 @@
+
+state = {
+	id = 87
+	name = "STATE_87"
+
+	history = {
+		owner = ARN
+		add_core_of = ARN
+		add_core_of = SPR
+		victory_points = {
+			3816 20
+		}
+		buildings = {
+			infrastructure = 6
+			internet_station = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+
+		}
+
+		2017.1.1 = {
+			buildings = {
+				internet_station = 4
+			}
+			add_manpower = 104991
+		}
+	}
+
+	provinces = {
+		3816 813 6878 6901 9842
+	}
+	manpower = 856527
+	buildings_max_level_factor = 1.000
+	state_category = state_03
+}

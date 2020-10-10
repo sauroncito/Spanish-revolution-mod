@@ -1,0 +1,370 @@
+﻿2000.1.1 = {
+
+
+add_manpower = 17000
+
+set_variable = { var = senators_support value = 48 }
+set_variable = { var = senators_total value = 96 }
+set_variable = { var = representatives_support value = 218 }
+set_variable = { var = representatives_total value = 435 }
+set_variable = { var = quorum_low value = 39 }
+set_variable = { var = quorum_medium value = 49 }
+set_variable = { var = quorum_high value = 58 }
+USA_recalc_congress_icon_frames = yes
+
+	set_technology = {
+		legacy_doctrines = 1
+		modern_blitzkrieg = 1
+		forward_defense = 1
+		encourage_nco_iniative = 1
+		air_land_battle = 1
+
+		modern_carrier_0 = 1
+
+		corvette_1 = 1
+
+		LPD_0 = 1
+
+		frigate_1 = 1
+
+		submarine_1 = 1
+		diesel_attack_submarine_1 = 1
+
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+
+		command_control_equipment = 1
+		command_control_equipment1 = 1
+
+		land_Drone_equipment = 1
+		land_Drone_equipment1 = 1
+
+		Anti_tank_0 = 1
+
+		Heavy_Anti_tank_0 = 1
+
+		Anti_Air_0 = 1
+
+		combat_eng_equipment = 1
+
+		Early_APC = 1
+		MBT_1 = 1
+
+		ENGI_MBT_1 = 1
+
+		util_vehicle_0 = 1
+
+		Rec_tank_0 = 1
+
+		IFV_1 = 1
+
+		APC_1 = 1
+
+		Air_APC_1 = 1
+
+		SP_arty_0 = 1
+
+		artillery_0 = 1
+		artillery_1 = 1
+
+		SP_Anti_Air_0 = 1
+
+		early_helicopter = 1
+		transport_helicopter1 = 1
+		attack_helicopter1 = 1
+
+		early_fighter = 1
+		MR_Fighter1 = 1
+
+		AS_Fighter1 = 1
+
+		MR_Fighter1 = 1
+
+		L_Strike_fighter1 = 1
+
+		Strike_fighter1 = 1
+
+		early_bomber = 1
+		naval_plane1 = 1
+
+		transport_plane1 = 1
+
+		landing_craft = 1
+
+		night_vision_1 = 1
+
+		body_armor_1980 = 1
+		camouflage = 1
+
+		basic_computing = 1
+		integrated_circuit = 1
+		computing1 = 1
+		decryption1 = 1
+		encryption1 = 1
+		microprocessors = 1
+		computing2 = 1
+		decryption2 = 1
+		encryption2 = 1
+
+		radar = 1
+		internet1 = 1 	#1G
+		internet2 = 1
+		gprs = 1
+	}
+	
+	add_ideas = {
+		#pop_050
+		
+		The_Clergy
+		farmers
+		maritime_industry
+		#Mass_Media
+		widespread_corruption
+		gdp_8
+		christian
+		### EU_member ### can't be released as EU member
+		recession
+		defence_01
+		edu_03
+		health_04
+		social_06
+		bureau_03
+		western_country
+		medium_far_right_movement
+	}
+	
+	set_popularities = {
+		democratic = 35.5
+		communism = 0.0
+		fascism = 0.0
+		neutrality = 23.0
+		nationalist = 41.5
+	}
+	set_politics = {
+		ruling_party = nationalist
+		last_election = "1998.07.26"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+
+	start_politics_input = yes
+
+
+
+	set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+	set_variable = { party_pop_array^1 = 0.088 } #conservatism
+	set_variable = { party_pop_array^2 = 0 } #liberalism
+	set_variable = { party_pop_array^3 = 0.267 } #socialism
+	set_variable = { party_pop_array^4 = 0 } #Communist-State
+	set_variable = { party_pop_array^5 = 0 } #anarchist_communism
+	set_variable = { party_pop_array^6 = 0 } #Conservative
+	set_variable = { party_pop_array^7 = 0 } #Autocracy
+	set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
+	set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+	set_variable = { party_pop_array^10 = 0 } #Kingdom
+	set_variable = { party_pop_array^11 = 0 } #Caliphate
+	set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+	set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+	set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+	set_variable = { party_pop_array^15 = 0 } #oligarchism
+	set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+	set_variable = { party_pop_array^17 = 0.141 } #Neutral_green
+	set_variable = { party_pop_array^18 = 0.089 } #neutral_Social
+	set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+	set_variable = { party_pop_array^20 = 0.415 } #Nat_Populism
+	set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+	set_variable = { party_pop_array^22 = 0 } #Nat_Autocracy
+	set_variable = { party_pop_array^23 = 0 } #Monarchist
+	add_to_array = { ruling_party = 20 }
+	startup_politics = yes
+	
+	create_country_leader = {
+		name = "Jordi Pujol"
+		picture = "jordi_pujol.dds"
+		ideology = Nat_Populism
+		traits = {
+			nationalist_Nat_Populism
+		}
+	}
+	
+	#Influence system
+	init_influence = yes
+	set_variable = { domestic_influence_amount = 80 }
+	add_to_array = { influence_array = FRA.id }
+	add_to_array = { influence_array_val = 20 }
+	add_to_array = { influence_array = ENG.id }
+	add_to_array = { influence_array_val = 10 }
+	add_to_array = { influence_array = SPR.id }
+	add_to_array = { influence_array_val = 25 }
+	startup_influence = yes
+
+	capital = 89
+	oob = "GAL_2000"
+	add_ideas = {
+		gdp_7
+		christian
+	}
+	
+		if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "GAL_2000_naval_mtg"
+		else = {
+			set_naval_oob = "GAL_2000_naval_legacy"
+		}
+	}
+	
+		### Economy
+	set_variable = { var = debt value = 120 }
+	set_variable = { var = treasury value = 5 }
+	set_variable = { var = tax_rate value = 35 }
+	set_variable = { var = int_investments value = 0 }
+	#initial_money_setup = yes
+}
+
+2017.1.1 = {
+
+	add_manpower = 30000
+	capital = 89
+	oob = "GAL_2017"
+	set_convoys = 150
+
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "GAL_2017_naval_mtg"
+		else = {
+			set_naval_oob = "GAL_2017_naval_legacy"
+		}
+	}
+
+	add_ideas = {
+		#pop_050
+
+		The_Clergy
+		farmers
+		maritime_industry
+		#Mass_Media
+		widespread_corruption
+		gdp_6
+		christian
+		### EU_member ### can't be released as EU member
+		stagnation
+		defence_01
+		edu_03
+		health_04
+		social_06
+		bureau_03
+		western_country
+		medium_far_right_movement
+	}
+	
+
+	set_technology = {
+		
+		microprocessors = 1
+		computing2 = 1
+		decryption2 = 1
+		encryption2 = 1
+		computing3 = 1
+		decryption3 = 1
+		encryption3 = 1
+		computing4 = 1
+		decryption4 = 1
+		encryption4 = 1
+		computing5 = 1
+		decryption5 = 1
+		encryption5 = 1
+		neural_networks_revival = 1
+		data_mining = 1
+		machine_learning = 1
+		sociable_machines = 1
+		industrial_electrospun_polymeric_nanofibers = 1
+		multiwalled_carbon_nanotubes = 1
+		modern_electrospinning = 1
+		stereolitography = 1
+		early_3D_printers = 1
+		t3D_wax_printer = 1
+		DNA_fingerprinting = 1
+		modern_gmo = 1
+		gene_therapy = 1
+		genetically_modified_crops = 1
+		gene_targeting_pesticides = 1
+		human_genome_project = 1
+		crispr = 1
+		cas9_gene_editing = 1
+		internet2 = 1 	#2G
+		gprs = 1
+		wifi = 1
+		internet3 = 1	#3G
+		
+	}
+
+	set_popularities = {
+		democratic = 67.5
+		communism = 3.0
+		fascism = 0.0
+		neutrality = 29.5
+		nationalist = 0.0
+	}
+	set_politics = {
+		
+		ruling_party = democratic
+		last_election = "2016.6.26"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	
+	start_politics_input = yes
+
+	set_variable = { party_pop_array^0 = 0 } #Western_Autocracy
+	set_variable = { party_pop_array^1 = 0.03 } #conservatism
+	set_variable = { party_pop_array^2 = 0.519 } #liberalism
+	set_variable = { party_pop_array^3 = 0.126 } #socialism
+	set_variable = { party_pop_array^4 = 0 } #Communist-State
+	set_variable = { party_pop_array^5 = 0.03 } #anarchist_communism
+	set_variable = { party_pop_array^6 = 0 } #Conservative
+	set_variable = { party_pop_array^7 = 0 } #Autocracy
+	set_variable = { party_pop_array^8 = 0 } #Mod_Vilayat_e_Faqih
+	set_variable = { party_pop_array^9 = 0 } #Vilayat_e_Faqih
+	set_variable = { party_pop_array^10 = 0 } #Kingdom
+	set_variable = { party_pop_array^11 = 0 } #Caliphate
+	set_variable = { party_pop_array^12 = 0 } #Neutral_Muslim_Brotherhood
+	set_variable = { party_pop_array^13 = 0 } #Neutral_Autocracy
+	set_variable = { party_pop_array^14 = 0 } #Neutral_conservatism
+	set_variable = { party_pop_array^15 = 0 } #oligarchism
+	set_variable = { party_pop_array^16 = 0 } #Neutral_Libertarian
+	set_variable = { party_pop_array^17 = 0.059 } #Neutral_green
+	set_variable = { party_pop_array^18 = 0.237 } #neutral_Social
+	set_variable = { party_pop_array^19 = 0 } #Neutral_Communism
+	set_variable = { party_pop_array^20 = 0 } #Nat_Populism
+	set_variable = { party_pop_array^21 = 0 } #Nat_Fascism
+	set_variable = { party_pop_array^22 = 0 } #Nat_Autocracy
+	set_variable = { party_pop_array^23 = 0 } #Monarchist
+	add_to_array = { ruling_party = 2 }
+	startup_politics = yes
+
+	create_country_leader = {
+		name = "Carles Puigdemont"
+		picture = "carles_puigdemont.dds"
+		ideology = liberalism
+		traits = {
+			western_liberalism
+		}
+	}
+
+	#Nat focus
+	
+	### Economy
+	set_variable = { var = debt value = 150 }
+	set_variable = { var = treasury value = 10 }
+	set_variable = { var = tax_rate value = 35 }
+	set_variable = { var = int_investments value = 0 }
+	#initial_money_setup = yes	
+	
+	
+	
+	
+}

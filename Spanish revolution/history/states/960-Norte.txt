@@ -1,0 +1,45 @@
+
+state = {
+	id = 960
+	name = "STATE_960"
+	resources = {
+		tungsten = 5.000
+	}
+
+	history = {
+		owner = POR
+		victory_points = {
+			9817 5 
+		}
+		victory_points = {
+			11673 1 
+		}
+		buildings = {
+			infrastructure = 4
+			internet_station = 1
+			industrial_complex = 1
+			fuel_silo = 1
+			synthetic_refinery = 1
+			dockyard = 1
+			9817 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = POR
+		2017.1.1 = {
+			buildings = {
+				internet_station = 3
+			}
+			add_manpower = 26405
+		}
+	}
+
+	provinces = {
+		877 724 11673 9817 
+	}
+	manpower = 3689682
+	buildings_max_level_factor = 1.000
+	state_category = state_04
+}

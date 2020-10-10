@@ -1,0 +1,21 @@
+﻿units = {
+
+	### Naval OOB ###
+
+
+	fleet = {
+		name = "Liberation Fleet"
+		naval_base = 9764
+		task_force = {
+			name = "Liberation Fleet"
+			location = 9764
+			ship = { name = "CLF Tarragona (S-61)" definition = diesel_attack_submarine experience = 75 equipment = { diesel_attack_submarine_1 = { amount = 1 owner = CAT } } }
+			ship = { name = "CLF Girona (S-62)" definition = diesel_attack_submarine experience = 75 equipment = { diesel_attack_submarine_1 = { amount = 1 owner = CAT } } }
+			ship = { name = "CLF Barcelona (F-86)" definition = frigate experience = 75 equipment = { frigate_1 = { amount = 1 owner = CAT creator = USA } } }
+			ship = { name = "CLF Cervera (F-35)" definition = corvette experience = 75 equipment = { corvette_1 = { amount = 1 owner = CAT } } }
+			ship = { name = "CLF Lleida (F-35)" definition = corvette experience = 75 equipment = { corvette_1 = { amount = 1 owner = CAT } } }			
+		}
+	}
+
+}
+

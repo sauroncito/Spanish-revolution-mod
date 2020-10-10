@@ -1,0 +1,43 @@
+
+state = {
+	id = 92
+	name = "STATE_92"
+
+	history = {
+		owner = SPR
+		victory_points = {
+			6906 5 
+		}
+
+
+		buildings = {
+			infrastructure = 6
+			internet_station = 2
+			industrial_complex = 2
+			fuel_silo = 1
+			synthetic_refinery = 1
+			air_base = 3
+			6906 = {
+				naval_base = 3
+
+			}
+
+
+		}
+		add_core_of = SPR
+		2017.1.1 = {
+			add_manpower = 870027
+			buildings = {
+				internet_station = 4
+				industrial_complex = 4
+			}
+		}
+	}
+
+	provinces = {
+		6906 6959 3799 11884
+	}
+	manpower = 6247532
+	buildings_max_level_factor = 1.000
+	state_category = state_04
+}

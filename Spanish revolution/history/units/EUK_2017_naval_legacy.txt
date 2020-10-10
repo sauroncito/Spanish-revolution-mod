@@ -1,0 +1,20 @@
+﻿units = {
+
+	### Naval OOB ###
+
+	fleet = {
+		name = "Euskadi Flota"
+		naval_base = 740
+		task_force = {
+			name = "Euskadi Flota"
+			location = 740
+			ship = { name = "EFS Bilbao (S-61)" definition = diesel_attack_submarine experience = 75 equipment = { diesel_attack_submarine_1 = { amount = 1 owner = AND } } }
+			ship = { name = "EFS Vitoria (S-62)" definition = diesel_attack_submarine experience = 75 equipment = { diesel_attack_submarine_1 = { amount = 1 owner = AND } } }
+			ship = { name = "EFS San Sebastian (S-62)" definition = diesel_attack_submarine experience = 75 equipment = { diesel_attack_submarine_1 = { amount = 1 owner = AND } } }
+			ship = { name = "EFS Hondarribia (F-86)" definition = frigate experience = 75 equipment = { frigate_2 = { amount = 1 owner = AND creator = USA } } }
+			ship = { name = "EFS Zarauz (F-35)" definition = corvette experience = 75 equipment = { corvette_1 = { amount = 1 owner = AND } } }
+			ship = { name = "EFS Zumaya (F-35)" definition = corvette experience = 75 equipment = { corvette_1 = { amount = 1 owner = AND } } }		
+		}
+	}
+
+}

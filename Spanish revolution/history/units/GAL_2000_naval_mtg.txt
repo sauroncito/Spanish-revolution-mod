@@ -1,0 +1,35 @@
+﻿units = {
+
+	### Naval OOB ###
+
+	fleet = {
+		name = "Galician Surface Fleet"
+		naval_base = 758
+		task_force = {
+			name = "Galician Surface Fleet"
+			location = 758
+						
+			ship = { name = "GFS Tuy" definition = frigate experience = 75 equipment = { frigate_2 = { amount = 1 owner = GAL creator = USA } } }
+			ship = { name = "GFS Pontevedra" definition = frigate experience = 75 equipment = { frigate_2 = { amount = 1 owner = GAL creator = USA } } }
+			ship = { name = "GFS Ferrol" definition = corvette experience = 75 equipment = { corvette_2 = { amount = 1 owner = GAL } } }
+			ship = { name = "GFS Santiago de Compostela" definition = corvette experience = 75 equipment = { corvette_2 = { amount = 1 owner = GAL } } }		
+			ship = { name = "GFS Lugo" definition = corvette experience = 75 equipment = { corvette_2 = { amount = 1 owner = GAL } } }	
+			ship = { name = "GFS Ourense" definition = corvette experience = 75 equipment = { corvette_2 = { amount = 1 owner = GAL } } }
+			ship = { name = "GFS Vigo" definition = LPD experience = 75 equipment = { LPD_1 = { amount = 1 owner = GAL } } air_wings = { } }
+
+		}
+	}
+
+	fleet = {
+		name = "Galician Submarine Fleet"
+		naval_base = 758
+		task_force = {
+			name = "Galician Submarine Fleet"
+			location = 758
+			ship = { name = "GFS Cangas" definition = diesel_attack_submarine experience = 75 equipment = { diesel_attack_submarine_2 = { amount = 1 owner = GAL } } }
+			ship = { name = "GFS Bayona" definition = diesel_attack_submarine experience = 75 equipment = { diesel_attack_submarine_2 = { amount = 1 owner = GAL } } }
+			ship = { name = "GFS Riveira" definition = diesel_attack_submarine experience = 75 equipment = { diesel_attack_submarine_2 = { amount = 1 owner = GAL } } }
+		}
+	}
+
+}

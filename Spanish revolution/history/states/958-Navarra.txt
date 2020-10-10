@@ -1,0 +1,39 @@
+
+state = {
+	id = 958
+	name = "STATE_958"
+	resources = {
+
+	}
+
+	history = {
+		owner = SPR
+		Add_core_of = NLR
+		add_core_of = SPR
+		victory_points = {
+			3933 20 
+		}
+
+		buildings = {
+			infrastructure = 3
+			internet_station = 2
+			industrial_complex = 1
+
+		}
+
+		2017.1.1 = {
+			add_manpower = 91974
+			buildings = {
+				internet_station = 4
+				industrial_complex = 2
+			}
+		}
+	}
+
+	provinces = {
+		3933 9857 932
+	}
+	manpower = 548379
+	buildings_max_level_factor = 1.000
+	state_category = state_03
+}
