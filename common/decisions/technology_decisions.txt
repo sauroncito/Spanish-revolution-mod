@@ -1,0 +1,174 @@
+technology_decisions= {
+
+	infantrytech = {
+		
+		visible = {
+		has_completed_focus = CAT_military1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_military1
+			has_war_support > 0.4
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 125
+		days_remove = 7	
+		days_re_enable = 180
+		
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		add_tech_bonus = {
+			bonus = 0.25
+			uses = 1
+			category = Cat_INF
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+	equipmenttech = {
+		
+		visible = {
+		has_completed_focus = CAT_military1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_military1
+			has_war_support > 0.4
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 125
+		days_remove = 7	
+		days_re_enable = 180
+		
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = Cat_ARTILLERY
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+	armortech = {
+		
+		visible = {
+		has_completed_focus = CAT_military1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_military1
+			has_war_support > 0.4
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 125
+		days_remove = 7	
+		days_re_enable = 180
+		
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = Cat_ARMOR
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}	
+	
+	airtech = {
+		
+		visible = {
+		has_completed_focus = CAT_military1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_military1
+			has_war_support > 0.4
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 125
+		days_remove = 7	
+		days_re_enable = 180
+		
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = Cat_AIR_EQP
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}		
+
+	
+	navaltech = {
+		
+		visible = {
+		has_completed_focus = CAT_military1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_military1
+			has_war_support > 0.4
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 125
+		days_remove = 7	
+		days_re_enable = 180
+		
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = Cat_NAVAL_EQP	
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}	
+	
+}

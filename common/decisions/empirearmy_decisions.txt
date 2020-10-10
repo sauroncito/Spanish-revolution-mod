@@ -1,0 +1,144 @@
+empirearmy_decisions= {
+
+
+
+
+
+	spanisharmy = {
+		
+		visible = {
+			always = yes
+			has_completed_focus = CAT_expansiuc1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_with = SPR
+			has_completed_focus = CAT_expansiuc1
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 100
+		days_remove = instant		
+		fire_only_once = yes
+		
+		complete_effect = {
+		custom_effect_tooltip = TT_OEF_SPENDING_MINUS_1.0
+		load_oob = "CAT_Espanya"
+		subtract_from_variable = { treasury = 1.0 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+		frencharmy = {
+		
+		visible = {
+			always = yes
+			has_completed_focus = CAT_expansiuc1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_with = FRA
+			has_completed_focus = CAT_expansiuc1
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 100
+		days_remove = instant		
+		fire_only_once = yes
+		
+		complete_effect = {
+		custom_effect_tooltip = TT_OEF_SPENDING_MINUS_1.0
+		load_oob = "CAT_Franca"
+		subtract_from_variable = { treasury = 1.0 }
+				}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+		italianarmy = {
+		
+		visible = {
+			always = yes
+			has_completed_focus = CAT_expansiuc1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_with = ITA
+			has_completed_focus = CAT_expansiuc1
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 100
+		days_remove = instant		
+		fire_only_once = yes
+		
+		complete_effect = {
+		custom_effect_tooltip = TT_OEF_SPENDING_MINUS_1.0
+		subtract_from_variable = { treasury = 1.0 }
+		load_oob = "CAT_Italia"
+		
+				}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+		greekarmy = {
+		
+		visible = {
+			always = yes
+			has_completed_focus = CAT_expansiuc1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_with = GRE
+			has_completed_focus = CAT_expansiuc1
+			NOT = {is_puppet_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 100
+		days_remove = instant		
+		fire_only_once = yes
+		
+		complete_effect = {
+		custom_effect_tooltip = TT_OEF_SPENDING_MINUS_1.0
+		subtract_from_variable = { treasury = 1.0 }
+		load_oob = "CAT_Grecia"
+		
+				}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+	}
+	
+	
+	
+	
+	
+	
+	

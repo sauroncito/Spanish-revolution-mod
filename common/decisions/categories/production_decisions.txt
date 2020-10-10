@@ -1,0 +1,4 @@
+production_decisions = {
+	icon = generic_propaganda
+
+}

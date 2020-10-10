@@ -1,0 +1,2514 @@
+focus_tree = { 
+id = catalonia_focus
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = CAT 
+} 
+}
+
+ continuous_focus_position = { x = 0 y = 0 }
+ 
+#Focus for The year 2000
+focus = { 
+id = CAT_theyear2000
+icon = champagne_bribes
+x = 10
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward= {
+		add_political_power = 900
+		}
+ }  
+ 
+#Focus for L'estat català
+focus = { 
+id = CAT_lestatcatal
+icon = become_puppet
+x = 10
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_theyear2000 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+	add_political_power = 100
+	}
+}
+  
+  
+ ###################################################################  ###################################################################  ################################################################### 
+ ###################################################################  ###################################################################  ###################################################################   
+ ###################################################################  ###################################################################  ###################################################################   
+  
+#Focus for Industria
+focus = { 
+id = CAT_industria
+icon = industry
+x = 1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_lestatcatal } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward={
+add_ideas = CAT_Industria1
+}
+ } 
+ 
+ 
+#Focus for Recursos 1
+focus = { 
+id = CAT_recursos1
+icon = steel_production2
+x = 0
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_industria } 
+ai_will_do = { 
+ factor = 1
+ } 
+    completion_reward = {
+		add_resource = {
+		type = steel
+		amount = 4
+		state = 86
+		}
+    }
+ } 
+
+#Focus for Recursos 2
+focus = { 
+id = CAT_recursos2
+icon = steel_production2
+x = 0
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_recursos1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+    completion_reward = {
+		add_resource = {
+		type = aluminium
+		amount = 4
+		state = 86
+		}
+    }
+ } 
+
+#Focus for Recursos 3
+focus = { 
+id = CAT_recursos3
+icon = steel_production2
+x = 0
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_recursos2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+    completion_reward = {
+		add_resource = {
+		type = tungsten
+		amount = 4
+		state = 86
+		}
+    }
+ }  
+
+
+#Focus for Industria 1
+focus = { 
+id = CAT_industria1
+icon = construction3
+x = 2
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_industria } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+		random_owned_state = {
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+		}
+	random_owned_state = {
+		limit = { 
+		free_building_slots = {
+		building = infrastructure
+		size > 0
+		include_locked = yes
+		}
+	}
+	add_building_construction = {
+	type = infrastructure
+	level = 1
+	instant_build = yes
+	}
+	}
+	}
+
+ } 
+
+
+#Focus for Industria 2
+focus = { 
+id = CAT_industria2
+icon = construction3
+x = 2
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_industria1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+		random_owned_state = {
+		add_extra_state_shared_building_slots = 2
+		add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+		}	
+		}
+	random_owned_state = {
+		limit = { 
+		free_building_slots = {
+		building = infrastructure
+		size > 2
+		include_locked = yes
+		}
+	}
+	add_building_construction = {
+	type = infrastructure
+	level = 2
+	instant_build = yes
+	}
+	}
+	}
+
+
+ } 
+
+
+
+#Focus for Industria 3
+focus = { 
+id = CAT_industria3
+icon = construction3
+x = 2
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_industria2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+		random_owned_state = {
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+			type = industrial_complex
+			level = 3
+			instant_build = yes
+		}
+		}
+	random_owned_state = {
+		limit = { 
+		free_building_slots = {
+		building = infrastructure
+		size > 3
+		include_locked = yes
+		}
+	}
+	add_building_construction = {
+	type = infrastructure
+	level = 3
+	instant_build = yes
+	}
+	}
+	}
+ } 
+
+#Focus for Industria T2
+focus = { 
+id = CAT_industriat2
+icon = construction
+x = 1
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_industria3 } 
+prerequisite = { focus = CAT_recursos3 } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward= {
+swap_ideas = {
+     remove_idea = CAT_Industria1
+     add_idea = CAT_Industria2
+}
+}
+ } 
+
+#Focus for Recursos A1
+focus = { 
+id = CAT_recursosa1
+icon = construction2
+x = 0
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_industriat2 } 
+mutually_exclusive = { focus = CAT_eficiencia1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_Recursos1
+		}
+}
+
+#Focus for Recursos A2
+focus = { 
+id = CAT_recursosa2
+icon = construction2
+x = 0
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_recursosa1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Recursos1
+		add_idea = CAT_Recursos2
+		}
+	}
+ } 
+ 
+ #Focus for Recursos A3
+focus = { 
+id = CAT_recursosa3
+icon = construction2
+x = 0
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_recursosa2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Recursos2
+		add_idea = CAT_Recursos3
+		}
+	}
+ }
+ 
+ #Focus for Eficiencia 1
+focus = { 
+id = CAT_eficiencia1
+icon = industry_communism
+x = 2
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_industriat2 } 
+mutually_exclusive = { focus = CAT_recursosa1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward= {
+     add_ideas = CAT_Eficiencia1
+	 }
+ } 
+
+ #Focus for Eficiencia 2
+focus = { 
+id = CAT_eficiencia2
+icon = industry_communism
+x = 2
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_eficiencia1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Eficiencia1
+		add_idea = CAT_Eficiencia2
+		}
+	} 
+}
+
+#Focus for Eficiencia 3
+focus = { 
+id = CAT_eficiencia3
+icon = industry_communism
+x = 2
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_eficiencia2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Eficiencia2
+		add_idea = CAT_Eficiencia3
+		}
+	} 
+ }
+ 
+#Focus for Industria Catalana
+focus = { 
+id = CAT_industriacatalana
+icon = air_production
+x = 1
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_recursosa3 focus = CAT_eficiencia3 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_to_variable = { treasury = 20 }
+		add_ideas = CAT_IndustriaCatalana
+	}
+ } 
+
+ 
+ 
+ 
+
+ ###################################################################  ###################################################################  ################################################################### 
+ ###################################################################  ###################################################################  ###################################################################   
+ ###################################################################  ###################################################################  ###################################################################   
+ 
+ 
+ 
+ 
+
+#Focus for Intern
+focus = { 
+id = CAT_intern
+icon = union_negotiations
+x = 5
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_lestatcatal } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward={
+	add_stability = -0.15
+	} 
+}
+
+#Focus for Autonomia 1
+focus = { 
+id = CAT_autonomia1
+icon = intelligence_exchange
+x = 4
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_intern } 
+ai_will_do = { 
+ factor = 1
+ } 
+    completion_reward = {
+		custom_effect_tooltip = TT_OEF_SPENDING_MINUS_0.5
+		subtract_from_variable = { treasury = 0.5 }
+		add_autonomy_ratio = {
+		value = 0.25
+		localization = Independency
+		}
+    }
+
+ } 
+
+#Focus for Autonomia 2
+focus = { 
+id = CAT_autonomia2
+icon = dangerous_laws
+x = 4
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_autonomia1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		custom_effect_tooltip = TT_OEF_SPENDING_MINUS_1.0
+		subtract_from_variable = { treasury = 1 }
+		add_autonomy_ratio = {
+		value = 0.5
+		localization = Independency
+		}
+	}
+
+
+ } 
+
+#Focus for Autonomia 3
+focus = { 
+id = CAT_autonomia3
+icon = gunpoint_diplomacy
+x = 4
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_autonomia2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+	unlock_decision_category_tooltip = independence_decisions
+    }
+ } 
+
+
+#Focus for Reformes 1
+focus = { 
+id = CAT_reformes1
+icon = demand_territory
+x = 6
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_intern } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+    completion_reward = {
+	add_political_power = 50
+    }
+
+ } 
+
+#Focus for Reformes 2
+focus = { 
+id = CAT_reformes2
+icon = propaganda
+x = 6
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_reformes1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+    completion_reward = {
+	add_political_power = 100
+    }
+
+ } 
+
+#Focus for Reformes 3
+focus = { 
+id = CAT_reformes3
+icon = forceful_treaty
+x = 6
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_reformes2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+    completion_reward = {
+	add_political_power = 200
+    }
+
+ } 
+
+#Focus for El nou Estat català
+focus = { 
+id = CAT_elnouestatcatala
+icon = rats_of_tobruk
+x = 5
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_autonomia3 } 
+prerequisite = { focus = CAT_reformes3 } 
+available = { NOT ={ is_puppet_of = SPR}}
+ai_will_do = { 
+ factor = 1
+ } 
+    completion_reward = {
+	unlock_decision_category_tooltip = paisos_decisions
+	add_stability = 0.1
+    }
+
+ } 
+ 
+ #Focus for Western
+focus = { 
+id = CAT_western
+icon = democracy
+x = 4
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_elnouestatcatala } 
+mutually_exclusive = { focus = CAT_salafism } 
+mutually_exclusive = { focus = CAT_nonaligned } 
+mutually_exclusive = { focus = CAT_nationalistic } 
+mutually_exclusive = { focus = CAT_emerging } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_Western
+	}
+ } 
+ 
+ 
+ #Focus for Western 1
+focus = { 
+id = CAT_western1
+icon = democracy2
+x = 4
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_western } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Western
+		add_idea = CAT_Western1
+		}
+	}
+ } 
+ 
+ 
+ 
+#Focus for Western 2
+focus = { 
+id = CAT_western2
+icon = democracy3
+x = 4
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_western1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Western1
+		add_idea = CAT_Western2
+		}
+	}
+ } 
+ 
+ 
+ 
+ #Focus for Western 3
+focus = { 
+id = CAT_western3
+icon = democracy4
+x = 4
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_western2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		unlock_decision_category_tooltip = CAT_congress_decisions
+		swap_ideas = {
+		remove_idea = CAT_Western2
+		add_idea = CAT_Western3
+		}
+	}
+ } 
+ 
+ #Focus for Emerging
+focus = { 
+id = CAT_emerging
+icon = national_unity
+x = 6
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_elnouestatcatala } 
+mutually_exclusive = { focus = CAT_nonaligned } 
+mutually_exclusive = { focus = CAT_nationalistic } 
+mutually_exclusive = { focus = CAT_salafism } 
+mutually_exclusive = { focus = CAT_western } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_Emerging
+
+	}
+ } 
+ 
+  
+#Focus for Emerging 1
+focus = { 
+id = CAT_emerging1
+icon = anti_fascism
+x = 6
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_emerging } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Emerging
+		add_idea = CAT_Emerging1
+		}
+	}
+ } 
+ 
+ 
+ #Focus for Emerging 2
+focus = { 
+id = CAT_emerging2
+icon = communism11
+x = 6
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_emerging1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Emerging1
+		add_idea = CAT_Emerging2
+		}
+	}
+ }
+ 
+
+#Focus for Emerging 3
+focus = { 
+id = CAT_emerging3
+icon = communist_factories
+x = 6
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_emerging2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Emerging2
+		add_idea = CAT_Emerging3
+		}
+	}
+ } 
+ 
+ 
+ #Focus for Salafism
+focus = { 
+id = CAT_salafism
+icon = monarchism
+x = 8
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_elnouestatcatala } 
+mutually_exclusive = { focus = CAT_nonaligned } 
+mutually_exclusive = { focus = CAT_nationalistic } 
+mutually_exclusive = { focus = CAT_emerging } 
+mutually_exclusive = { focus = CAT_western } 
+mutually_exclusive = { focus = CAT_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_Salafism
+	}
+ } 
+
+ #Focus for Salafism 1
+focus = { 
+id = CAT_salafism1
+icon = monarchism
+x = 8
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_salafism } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Salafism
+		add_idea = CAT_Salafism1
+		}
+	}
+ } 
+ 
+
+
+
+#Focus for Salafism 2
+focus = { 
+id = CAT_salafism2
+icon = monarchism
+x = 8
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_salafism1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Salafism1
+		add_idea = CAT_Salafism2
+		}
+	}
+ } 
+
+
+
+#Focus for Salafism 3
+focus = { 
+id = CAT_salafism3
+icon = monarchism
+x = 8
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_salafism2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Salafism2
+		add_idea = CAT_Salafism3
+		}
+	}
+ } 
+
+
+#Focus for Nationalistic
+focus = { 
+id = CAT_nationalistic
+icon = fascism
+x = 12
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_elnouestatcatala } 
+mutually_exclusive = { focus = CAT_salafism } 
+mutually_exclusive = { focus = CAT_nonaligned } 
+mutually_exclusive = { focus = CAT_emerging } 
+mutually_exclusive = { focus = CAT_western } 
+mutually_exclusive = { focus = CAT_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_Nationalist
+	}
+ } 
+
+
+#Focus for Nationalistic 1
+focus = { 
+id = CAT_nationalistic1
+icon = fascism2
+x = 12
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_nationalistic } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Nationalist
+		add_idea = CAT_Nationalist1
+		}
+	}
+ } 
+
+#Focus for Nationalistic 2
+focus = { 
+id = CAT_nationalistic2
+icon = fascism3
+x = 12
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_nationalistic1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Nationalist1
+		add_idea = CAT_Nationalist2
+		}
+	}
+ } 
+
+#Focus for Nationalistic 3
+focus = { 
+id = CAT_nationalistic3
+icon = anti_democracy
+x = 12
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_nationalistic2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		unlock_decision_category_tooltip = militia_decisions
+		swap_ideas = {
+		remove_idea = CAT_Nationalist2
+		add_idea = CAT_Nationalist3
+		}
+	}
+ } 
+
+
+#Focus for Non-Aligned
+focus = { 
+id = CAT_nonaligned
+icon = demand_territory2
+x = 10
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_elnouestatcatala } 
+mutually_exclusive = { focus = CAT_salafism } 
+mutually_exclusive = { focus = CAT_nationalistic } 
+mutually_exclusive = { focus = CAT_emerging } 
+mutually_exclusive = { focus = CAT_western } 
+mutually_exclusive = { focus = CAT_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_Non-Aligned
+	}
+ } 
+ 
+ 
+ 
+#Focus for Non-Aligned 1
+focus = { 
+id = CAT_nonaligned1
+icon = demand_territory2
+x = 10
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_nonaligned } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Non-Aligned
+		add_idea = CAT_Non-Aligned1
+		}
+	}
+ }
+ 
+ 
+ 
+#Focus for Non-Aligned 2
+focus = { 
+id = CAT_nonaligned2
+icon = demand_territory2
+x = 10
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_nonaligned1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Non-Aligned1
+		add_idea = CAT_Non-Aligned2
+		}
+	}
+ } 
+
+#Focus for Non-Aligned 3
+focus = { 
+id = CAT_nonaligned3
+icon = demand_territory2
+x = 10
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_nonaligned2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Non-Aligned2
+		add_idea = CAT_Non-Aligned3
+		}
+	}
+ } 
+
+
+
+
+ ###################################################################  ###################################################################  ################################################################### 
+ ###################################################################  ###################################################################  ###################################################################   
+ ###################################################################  ###################################################################  ###################################################################   
+
+
+
+#Focus for comercial i I+D
+focus = { 
+id = CAT_comercialiid
+icon = coins
+x = 12
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_lestatcatal } 
+ai_will_do = { 
+ factor = 1
+ } 
+    completion_reward = {
+	add_research_slot = 1
+    }
+ }
+ 
+ 
+#Focus for comercial 1
+focus = { 
+id = CAT_comercial1
+icon = industry_united_states
+x = 9
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercialiid } 
+mutually_exclusive = { focus = CAT_id1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_to_variable = { treasury = 5 }
+		add_ideas = CAT_comercial1
+	}
+ } 
+
+#Focus for comercial 2
+focus = { 
+id = CAT_comercial2
+icon = industry_united_states
+x = 9
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercial1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		
+		add_to_variable = { treasury = 10 }
+		swap_ideas = {
+		remove_idea = CAT_comercial1
+		add_idea = CAT_comercial2
+		}
+	}
+ } 
+
+#Focus for comercial 3
+focus = { 
+id = CAT_comercial3
+icon = industry_united_states
+x = 9
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercial2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_to_variable = { treasury = 15 }
+		swap_ideas = {
+		remove_idea = CAT_comercial2
+		add_idea = CAT_comercial3
+		}
+	}
+ } 
+
+#Focus for I+D 1
+focus = { 
+id = CAT_id1
+icon = scientific_exchange
+x = 11
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercialiid } 
+mutually_exclusive = { focus = CAT_comercial1 } 
+mutually_exclusive = { focus = CAT_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_ID1
+	}
+ } 
+ 
+#Focus for I+D 2
+focus = { 
+id = CAT_id2
+icon = scientific_exchange
+x = 11
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_id1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ID1
+		add_idea = CAT_ID2
+		}
+	}
+ } 
+
+#Focus for I+D 3
+focus = { 
+id = CAT_id3
+icon = scientific_exchange
+x = 11
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_id2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ID2
+		add_idea = CAT_ID3
+		}
+	}
+ }  
+ 
+ #Focus for Final CID1
+focus = { 
+id = CAT_finalcid1
+icon = industry_civilian
+x = 10
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercial3 focus = CAT_id3 } 
+ai_will_do = { 
+ factor = 1
+ } 
+    completion_reward = {
+	unlock_decision_category_tooltip = production_decisions
+	add_ideas = CAT_CID1
+	}
+ } 
+ 
+ 
+#Focus for Research 1
+focus = { 
+id = CAT_research1
+icon = research2
+x = 13
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercialiid } 
+ai_will_do = { 
+ factor = 1
+ } 
+    completion_reward = {
+	add_research_slot = 1
+    }
+ } 
+ 
+ #Focus for Research 2
+focus = { 
+id = CAT_research2
+icon = research2
+x = 13
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_research1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+    completion_reward = {
+	add_research_slot = 1
+    }
+ } 
+ 
+ 
+ #Focus for Research 3
+focus = { 
+id = CAT_research3
+icon = research2
+x = 13
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_research2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+    completion_reward = {
+	add_research_slot = 1
+    }
+ } 
+ 
+ #Focus for Research A1
+focus = { 
+id = CAT_researcha1
+icon = research
+x = 15
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercialiid } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_ResearchA1
+	}
+ } 
+
+ #Focus for Research A2
+focus = { 
+id = CAT_researcha2
+icon = research
+x = 15
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_researcha1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ResearchA1
+		add_idea = CAT_ResearchA2
+		}
+	}
+ } 
+ 
+ #Focus for Research A3
+focus = { 
+id = CAT_researcha3
+icon = research
+x = 15
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_researcha2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ResearchA2
+		add_idea = CAT_ResearchA3
+		}
+	}
+ } 
+ 
+ #Focus for Research 4
+focus = { 
+id = CAT_research4
+icon = continuous_research
+x = 14
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_research3 } 
+prerequisite = { focus = CAT_researcha3 } 
+ai_will_do = { 
+ factor = 1
+ } 
+    completion_reward = {
+	unlock_decision_category_tooltip = research_decisions	
+	add_ideas = CAT_Research4
+    }
+ } 
+
+
+
+
+
+
+ ###################################################################  ###################################################################  ################################################################### 
+ ###################################################################  ###################################################################  ###################################################################   
+ ###################################################################  ###################################################################  ###################################################################   
+
+
+ 
+#Focus for Militar
+focus = { 
+id = CAT_militar
+icon = general_staff
+x = 22
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_lestatcatal } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+	unlock_decision_category_tooltip = military_decisions
+	army_experience = 15
+	navy_experience = 15
+	air_experience = 15
+	}
+ } 
+ 
+#Focus for Naval 1
+focus = { 
+id = CAT_naval1
+icon = navy2
+x = 18
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_militar } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+			navy_experience = 25
+		}
+ } 
+
+ #Focus for Naval 2
+focus = { 
+id = CAT_naval2
+icon = navy2
+x = 18
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_naval1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+			navy_experience = 25
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = yes
+			}
+			}
+		}
+}
+  
+ #Focus for Flota Ofensiva
+focus = { 
+id = CAT_flotaofensiva
+icon = carriers
+x = 17
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_naval2 } 
+mutually_exclusive = { focus = CAT_flotadefensiva } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = Cat_CARRIER
+			}
+		}
+ } 
+ 
+#Focus for Flota Ofensiva 1
+focus = { 
+id = CAT_flotaofensiva1
+icon = wolfpacks
+x = 17
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_flotaofensiva } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = Cat_DESTROYER
+			}
+
+		}
+ } 
+
+ #Focus for Flota Ofensiva 2
+focus = { 
+id = CAT_flotaofensiva2
+icon = battleships2
+x = 17
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_flotaofensiva1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = Cat_N_CRUISER
+			}
+
+		}
+ } 
+ 
+ #Focus for Flota Defensiva
+focus = { 
+id = CAT_flotadefensiva
+icon = continuous_def_against_influence
+x = 19
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_naval2 } 
+mutually_exclusive = { focus = CAT_flotaofensiva } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = Cat_CORVETTE
+			}
+		}
+ } 
+ 
+#Focus for Flota Defensiva 1
+focus = { 
+id = CAT_flotadefensiva1
+icon = cruisers
+x = 19
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_flotadefensiva } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = Cat_Frigate
+			}
+		}
+ }  
+ 
+
+#Focus for Flota Defensiva 2
+focus = { 
+id = CAT_flotadefensiva2
+icon = destroyers
+x = 19
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_flotadefensiva1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = Cat_DESTROYER
+			}
+		}
+ }  
+ 
+ 
+#Focus for Dockyards 1
+focus = { 
+id = CAT_dockyards1
+icon = continuous_naval_production
+x = 18
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_flotadefensiva2 focus = CAT_flotaofensiva2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+			add_to_variable = { debt = 5 }
+			navy_experience = 25
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			type = dockyard
+			level = 3
+			instant_build = yes
+			}
+			}
+		}
+ } 
+
+ #Focus for Terrestre 1
+focus = { 
+id = CAT_terrestre1
+icon = army_reform
+x = 22
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_militar } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward= {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+			}
+			
+		army_experience = 25	
+		}
+ } 
+ 
+ #Focus for Terrestre 2
+focus = { 
+id = CAT_terrestre2
+icon = army_reform
+x = 22
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_terrestre1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward= {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = land_doctrine
+			}
+		army_experience = 25	
+		}
+ } 
+ 
+ #Focus for Exercit Ofensiu
+focus = { 
+id = CAT_exercitofensiu
+icon = infiltration
+x = 21
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_terrestre2 } 
+mutually_exclusive = { focus = CAT_exercitdefensiu } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_ExercitOfensiu1
+	}
+ } 
+ 
+ #Focus for Exercit Ofensiu 1
+focus = { 
+id = CAT_exercitofensiu1
+icon = army_logistics
+x = 21
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_exercitofensiu } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ExercitOfensiu1
+		add_idea = CAT_ExercitOfensiu2
+		}
+	}
+ } 
+
+#Focus for Exercit Ofensiu 2
+focus = { 
+id = CAT_exercitofensiu2
+icon = small_arms2
+x = 21
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_exercitofensiu1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ExercitOfensiu2
+		add_idea = CAT_ExercitOfensiu3
+		}
+	}
+ } 
+ 
+
+#Focus for Exercit Defensiu
+focus = { 
+id = CAT_exercitdefensiu
+icon = tanks2
+x = 23
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_terrestre2 } 
+mutually_exclusive = { focus = CAT_exercitofensiu } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_ExercitDefensiu1
+	}
+ } 
+ 
+ #Focus for Exercit Defensiu 1
+focus = { 
+id = CAT_exercitdefensiu1
+icon = artillery
+x = 23
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_exercitdefensiu } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ExercitDefensiu1
+		add_idea = CAT_ExercitDefensiu2
+		}
+	}
+ } 
+ 
+ #Focus for Exercit Defensiu 2
+focus = { 
+id = CAT_exercitdefensiu2
+icon = small_arms
+x = 23
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_exercitdefensiu1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ExercitDefensiu2
+		add_idea = CAT_ExercitDefensiu3
+		}
+	}
+ } 
+ 
+ #Focus for Military 1
+focus = { 
+id = CAT_military1
+icon = industry_military
+x = 22
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_exercitdefensiu2 focus = CAT_exercitofensiu2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+		    unlock_decision_category_tooltip = technology_decisions
+			add_to_variable = { debt = 5 }
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			type = arms_factory
+			level = 2
+			instant_build = yes
+			}
+			}
+		}
+ } 
+ 
+ 
+
+#Focus for Aire 1
+focus = { 
+id = CAT_aire1
+icon = air_defense
+x = 26
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_militar } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward= {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = air_doctrine
+			}
+			
+		air_experience = 25	
+		}
+ } 
+
+#Focus for Aire 2
+focus = { 
+id = CAT_aire2
+icon = air_defense
+x = 26
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_aire1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward= {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = air_doctrine
+			}
+			
+		air_experience = 25	
+		}
+ } 
+
+#Focus for Aerea Ofensiva
+focus = { 
+id = CAT_aereaofensiva
+icon = bombs
+x = 25
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_aire2 } 
+mutually_exclusive = { focus = CAT_aereadefensiva } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward= {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = Cat_AS_FIGHTER
+			}
+		}
+ } 
+ 
+ #Focus for Aerea Ofensiva 1
+focus = { 
+id = CAT_aereaofensiva1
+icon = flying_tigers
+x = 25
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_aereaofensiva } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward= {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = Cat_S_FIGHTER
+			}
+		}
+ } 
+ 
+ #Focus for Aerea Ofensiva 2
+focus = { 
+id = CAT_aereaofensiva2
+icon = bombs2
+x = 25
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_aereaofensiva1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward= {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = Cat_INT_FIGHTER
+			}
+		}
+ } 
+ 
+ #Focus for Aerea Defensiva
+focus = { 
+id = CAT_aereadefensiva
+icon = fighters2
+x = 27
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_aire2 } 
+mutually_exclusive = { focus = CAT_aereaofensiva } 
+ai_will_do = { 
+ factor = 1
+ } 
+ 		completion_reward= {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = Cat_MR_FIGHTER
+			}
+		}
+
+ } 
+
+#Focus for Aerea Defensiva 1
+focus = { 
+id = CAT_aereadefensiva1
+icon = air_doctrine
+x = 27
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_aereadefensiva } 
+ai_will_do = { 
+ factor = 1
+ } 
+ 		completion_reward= {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = Cat_CAS
+			}
+		}
+
+ } 
+
+#Focus for Aerea Defensiva 2
+focus = { 
+id = CAT_aereadefensiva2
+icon = fighters
+x = 27
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_aereadefensiva1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+ 		completion_reward= {
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = Cat_NAVAL_PLANE
+			}
+		}
+ } 
+
+#Focus for Bases 1
+focus = { 
+id = CAT_bases1
+icon = special_air_service
+x = 26
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_aereaofensiva2 focus = CAT_aereadefensiva2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+			add_to_variable = { debt = 5 }
+			random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+ } 
+ 
+ ###################################################################  ###################################################################  ################################################################### 
+ ###################################################################  ###################################################################  ###################################################################   
+ ###################################################################  ###################################################################  ###################################################################   
+
+
+ 
+
+
+#Focus for Diplomatic
+focus = { 
+id = CAT_diplomatic
+icon = diplomacy
+x = 34
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_lestatcatal } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+		add_political_power = 150
+		}
+ } 
+
+#Focus for Expansiu
+focus = { 
+id = CAT_expansiu
+icon = great_railway_incident
+x = 30
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_diplomatic } 
+mutually_exclusive = { focus = CAT_aillat } 
+mutually_exclusive = { focus = CAT_comercial } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward= {
+		add_political_power = 50
+		}
+ } 
+
+
+#Focus for Expansiu A1
+focus = { 
+id = CAT_expansiua1
+icon = military_academy
+x = 29
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_expansiu } 
+mutually_exclusive = { focus = CAT_expansiub1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_ExpansiuA1
+	}
+ } 
+
+
+#Focus for Expansiu A2
+focus = { 
+id = CAT_expansiua2
+icon = recruitment
+x = 29
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_expansiua1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ExpansiuA1
+		add_idea = CAT_ExpansiuA2
+		}
+	}
+ } 
+
+#Focus for Expansiu A3
+focus = { 
+id = CAT_expansiua3
+icon = lion
+x = 29
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_expansiua2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ExpansiuA2
+		add_idea = CAT_ExpansiuA3
+		}
+	}
+ } 
+
+
+#Focus for Expansiu B1
+focus = { 
+id = CAT_expansiub1
+icon = grenade
+x = 31
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_expansiu } 
+mutually_exclusive = { focus = CAT_expansiua1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_ExpansiuB1
+	}
+ } 
+
+
+#Focus for Expansiu B2
+focus = { 
+id = CAT_expansiub2
+icon = political_pressure
+x = 31
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_expansiub1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ExpansiuB1
+		add_idea = CAT_ExpansiuB2
+		}
+	}
+ } 
+
+#Focus for Expansiu B3
+focus = { 
+id = CAT_expansiub3
+icon = infantry_commonwealth
+x = 31
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_expansiub2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_ExpansiuB2
+		add_idea = CAT_ExpansiuB3
+		}
+	}
+ } 
+
+#Focus for Expansiu C1
+focus = { 
+id = CAT_expansiuc1
+icon = aggressive_diplomacy
+x = 30
+y = 7
+cost = 10
+available_if_capitulated = yes 
+available = {NOT = {is_subject_of = SPR}}
+prerequisite = { focus = CAT_expansiub3 focus = CAT_expansiua3 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+	unlock_decision_category_tooltip = empire_decisions
+	unlock_decision_category_tooltip = empirearmy_decisions
+	add_state_claim = 92
+	add_state_claim = 94
+	add_state_claim = 87
+	add_state_claim = 61
+	add_state_claim = 65
+	add_state_claim = 84
+	add_state_claim = 83
+	add_state_claim = 82
+	add_state_claim = 141
+	add_state_claim = 139
+	}
+ } 
+
+#Focus for Expansiu C2
+focus = { 
+id = CAT_expansiuc2
+icon = deadly_deal
+x = 30
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_expansiuc1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+	create_faction = Tripartit
+	CAT = { add_to_faction = POR }
+	CAT = { add_to_faction = MOR }
+	}
+ } 
+
+
+#Focus for Aillat
+focus = { 
+id = CAT_aillat
+icon = ultimatum
+x = 34
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_diplomatic } 
+mutually_exclusive = { focus = CAT_comercial } 
+mutually_exclusive = { focus = CAT_expansiu } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward= {
+		add_political_power = 50
+		}
+ } 
+
+
+#Focus for Autarky
+focus = { 
+id = CAT_autarky
+icon = powerplant
+x = 33
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_aillat } 
+mutually_exclusive = { focus = CAT_isolationism } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_Autarky1
+	}
+ } 
+
+
+#Focus for Autarky 1
+focus = { 
+id = CAT_autarky1
+icon = neutrality
+x = 33
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_autarky } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Autarky1
+		add_idea = CAT_Autarky2
+		}
+	}
+ } 
+
+
+#Focus for Autarky 2
+focus = { 
+id = CAT_autarky2
+icon = sustainable_development
+x = 33
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_autarky1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_to_variable = { debt = 5 }
+		swap_ideas = {
+		remove_idea = CAT_Autarky2
+		add_idea = CAT_Autarky3
+		}
+	}
+ } 
+
+
+#Focus for Isolationism
+focus = { 
+id = CAT_isolationism
+icon = city_fort
+x = 35
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_aillat } 
+mutually_exclusive = { focus = CAT_autarky } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_Isolationism1
+	}
+ } 
+
+
+#Focus for Isolationism 1
+focus = { 
+id = CAT_isolationism1
+icon = military_fort
+x = 35
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_isolationism } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Isolationism1
+		add_idea = CAT_Isolationism2
+		}
+	}
+ } 
+
+#Focus for Isolationism 2
+focus = { 
+id = CAT_isolationism2
+icon = military_fort2
+x = 35
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_isolationism1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_Isolationism2
+		add_idea = CAT_Isolationism3
+		}
+	}
+ } 
+
+#Focus for Aillat C1
+focus = { 
+id = CAT_aillatc1
+icon = islam_hijab
+x = 34
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_autarky2 focus = CAT_isolationism2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+	 unlock_decision_category_tooltip = defensive_decisions
+		add_ideas = CAT_AillatC1
+	}
+ } 
+
+#Focus for Aillat C2
+focus = { 
+id = CAT_aillatc2
+icon = espionage2
+x = 34
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_aillatc1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_AillatC1
+		add_idea = CAT_AillatC2
+		}
+	}
+ } 
+
+
+
+
+#Focus for comercial
+focus = { 
+id = CAT_comercial
+icon = production2
+x = 38
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_diplomatic } 
+mutually_exclusive = { focus = CAT_aillat } 
+mutually_exclusive = { focus = CAT_expansiu } 
+ai_will_do = { 
+ factor = 1
+ } 
+		completion_reward= {
+		add_political_power = 50
+		}
+ } 
+
+
+
+
+
+
+#Focus for comercial A1
+focus = { 
+id = CAT_comerciala1
+icon = embargo
+x = 37
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercial } 
+mutually_exclusive = { focus = CAT_comercialb1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_comercialA1
+	}
+ } 
+
+#Focus for comercial A2
+focus = { 
+id = CAT_comerciala2
+icon = trade
+x = 37
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comerciala1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_comercialA1
+		add_idea = CAT_comercialA2
+		}
+	}
+ } 
+
+#Focus for comercial A3
+focus = { 
+id = CAT_comerciala3
+icon = gold_standard2
+x = 37
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comerciala2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_comercialA2
+		add_idea = CAT_comercialA3
+		}
+	}
+ } 
+
+#Focus for comercial B1
+focus = { 
+id = CAT_comercialb1
+icon = economic_prosperity
+x = 39
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercial } 
+mutually_exclusive = { focus = CAT_comerciala1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		add_ideas = CAT_comercialB1
+	}
+ } 
+
+#Focus for comercial B2
+focus = { 
+id = CAT_comercialb2
+icon = aristocratic_funding
+x = 39
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercialb1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_comercialB1
+		add_idea = CAT_comercialB2
+		}
+	}
+ } 
+
+#Focus for comercial B3
+focus = { 
+id = CAT_comercialb3
+icon = economic_prosperity2
+x = 39
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercialb2 } 
+ai_will_do = { 
+ factor = 1
+ } 
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = CAT_comercialB2
+		add_idea = CAT_comercialB3
+		}
+	}
+ } 
+
+#Focus for comercial C1
+focus = { 
+id = CAT_comercialc1
+icon = agriculture
+x = 38
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comerciala3 focus = CAT_comercialb3 } 
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward={
+ 	unlock_decision_category_tooltip = investments_decisions
+	add_resource = {
+    type = steel
+    amount = 4
+    state = 86
+	}
+	}
+ } 
+
+#Focus for comercial C2
+focus = { 
+id = CAT_comercialc2
+icon = concessions2
+x = 38
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = CAT_comercialc1 } 
+ai_will_do = { 
+ factor = 1
+ } 
+ completion_reward={
+	add_resource = {
+    type = tungsten
+    amount = 2
+    state = 939
+	}
+	add_resource = {
+    type = aluminium
+    amount = 2
+    state = 940
+	}	
+	}
+ } 
+
+#End of focuses 
+ }

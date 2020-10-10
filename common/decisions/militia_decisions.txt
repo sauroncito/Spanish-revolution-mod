@@ -1,0 +1,94 @@
+militia_decisions= {
+
+	militia1 = {
+		
+		visible = {
+		has_completed_focus = CAT_nationalistic3
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			has_completed_focus = CAT_nationalistic3
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 50
+		days_remove = 90		
+		days_re_enable = 180
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+	militia2 = {
+		
+		visible = {
+			has_completed_focus = CAT_nationalistic3
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			has_decision = militia1
+			has_completed_focus = CAT_nationalistic3
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 150
+		days_remove = 30		
+		days_re_enable = 180
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.1 }
+			add_timed_idea = {
+				idea = CAT_militia1
+				days = 30
+			}
+		add_manpower = 1500
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}	
+	
+	militia3 = {
+		
+		visible = {
+			has_completed_focus = CAT_nationalistic3
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_war_support > 0.5
+			has_decision = militia1
+			has_completed_focus = CAT_nationalistic3
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 300
+		days_remove = 30		
+		days_re_enable = 180
+		complete_effect = {
+		subtract_from_variable = { treasury = 0.2}
+			add_timed_idea = {
+				idea = CAT_militia1
+				days = 60
+			}
+			add_manpower = 3000
+			}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		
+	}
+	
+}

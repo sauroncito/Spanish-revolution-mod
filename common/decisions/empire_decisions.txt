@@ -1,0 +1,196 @@
+empire_decisions= {
+
+
+	empire0 = {
+		
+		visible = {
+
+			has_completed_focus = CAT_expansiuc1
+		}
+		allowed = { tag = CAT }
+		available = {
+			has_completed_focus = CAT_expansiuc1
+			NOT = {is_subject_of = SPR}
+			has_full_control_of_state = 92
+			has_full_control_of_state = 94
+			has_full_control_of_state = 87
+			has_full_control_of_state = 61
+			has_full_control_of_state = 65
+			has_full_control_of_state = 84
+			has_full_control_of_state = 83
+			has_full_control_of_state = 82
+			has_full_control_of_state = 139
+			has_full_control_of_state = 141
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 25
+		days_remove = 360		
+		fire_only_once = yes
+		
+		remove_effect = {
+		set_cosmetic_tag = TCE
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+
+	empire1 = {
+		
+		visible = {
+
+			has_completed_focus = CAT_expansiuc1
+		}
+		allowed = { tag = CAT }
+		available = {
+		
+			has_completed_focus = CAT_expansiuc1
+			has_full_control_of_state = 92
+			has_full_control_of_state = 94
+			has_full_control_of_state = 87
+			NOT = {is_subject_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 250
+		days_remove = 360		
+		fire_only_once = yes
+		
+		remove_effect = {
+			add_state_core = 92
+		add_state_core = 94
+		add_state_core = 87
+		
+				}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+	
+	empire2 = {
+		
+		visible = {
+
+			has_completed_focus = CAT_expansiuc1
+		}
+		allowed = { tag = CAT }
+		available = {
+		
+			has_completed_focus = CAT_expansiuc1
+			has_full_control_of_state = 61
+			has_full_control_of_state = 65
+			NOT = {is_subject_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 250
+		days_remove = 360		
+		fire_only_once = yes
+		
+		remove_effect = {
+		
+		add_state_core = 61
+		add_state_core = 65
+	
+
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}	
+
+	empire3 = {
+		
+		visible = {
+
+			has_completed_focus = CAT_expansiuc1
+		}
+		allowed = { tag = CAT }
+		available = {
+		
+			has_completed_focus = CAT_expansiuc1
+
+			has_full_control_of_state = 84
+			has_full_control_of_state = 83
+			has_full_control_of_state = 82
+
+			NOT = {is_subject_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 250
+		days_remove = 360		
+		fire_only_once = yes
+		
+		remove_effect = {
+		
+		add_state_core = 84
+		add_state_core = 83
+		add_state_core = 82
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+	empire4 = {
+		
+		visible = {
+
+			has_completed_focus = CAT_expansiuc1
+		}
+		allowed = { tag = CAT }
+		available = {
+		
+			has_completed_focus = CAT_expansiuc1
+
+			has_full_control_of_state = 139
+			has_full_control_of_state = 141
+			NOT = {is_subject_of = SPR}
+			
+		}
+		
+		icon = decision_generic_prepare_civil_war
+		
+		cost = 250
+		days_remove = 360		
+		fire_only_once = yes
+		
+		remove_effect = {
+		
+		add_state_core = 139
+		add_state_core = 141
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+	}
+	
+	
+	
+	
+	
+	
+	

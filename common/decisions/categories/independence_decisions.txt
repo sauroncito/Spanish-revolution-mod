@@ -1,0 +1,4 @@
+independence_decisions = {
+	icon = generic_propaganda
+
+}

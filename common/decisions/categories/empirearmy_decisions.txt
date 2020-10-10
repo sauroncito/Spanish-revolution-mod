@@ -1,0 +1,4 @@
+empirearmy_decisions = {
+	icon = generic_propaganda
+
+}
